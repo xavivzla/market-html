@@ -1,0 +1,65 @@
+$transitionBtn: all .15s ease-in-out !default;
+$padding-btn: 1.3rem 4.3rem !default;
+$font-size-btn: 13px !default;
+$text-transform-btn: uppercase !default;
+$border-radius-btn: false !default;
+$border-radius-size-btn: 3px !default;
+$font-family-btn: $TertiaryMedium !default;
+$letter-spacing-btn: 0.70px !default;
+
+%base-button {
+  display         : inline-flex;
+  padding         : $padding-btn;
+  align-items: center;
+  justify-content: center;
+  text-align      : center;
+  border          : 0;
+  text-decoration : none;
+  text-transform: $text-transform-btn;
+  letter-spacing: $letter-spacing-btn;
+  transition: $transitionBtn;
+  cursor: pointer;
+  font-family: $font-family-btn;
+  font-size: $font-size-btn;
+  @if $border-radius-btn{
+    border-radius: $border-radius-size-btn;
+  }
+}
+
+@mixin createButton($bg-color: $btn-gray, $text-color: #909090, $border: $btn-gray) {
+  background-color : $bg-color;
+  color      : $text-color;
+  border: $border;
+  @content;
+}
+
+.btn{
+  @extend %base-button;
+  @include createButton();
+}
+
+@each $name, $value in $map-palette-button{
+  .btn-#{$name}{
+    $hashover: map-has-key($value, hover);
+    $typehover: type-of(map-get($value, hover));
+      @include createButton(map-get($value, background), map-get($value, color), map-get($value, border));
+        &:hover{
+          @if $hashover {
+            @if $typehover == 'map'{
+              @each $nm, $val in map-get($value, hover){
+                #{$nm}: $val;
+              }
+            }   
+          } @else {
+            transition: $transitionBtn;
+            background-color: lighten(map-get($value, background), 5);
+            color: darken(map-get($value, color), 5);
+            border: solid 1px lighten(map-get($value, background), 5);
+          }
+        }
+  }
+}
+
+.btn-fluid{
+  width: 100%;
+}

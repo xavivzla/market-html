@@ -1,0 +1,27 @@
+$max-width: 1400px !default;
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  font-family: $PrimaryRegular;
+  &.active{
+    overflow: hidden;
+  }
+}
+//Contenedor de rows con width maximo, sin grid
+.container{
+    width: 95%;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container-banner{
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  //Contenedor de rows full screen, sin grid
+  .container-fluid{
+    max-width: 100%;
+  }

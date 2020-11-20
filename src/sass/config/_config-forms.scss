@@ -1,0 +1,437 @@
+$border-input: #929292 !default;
+$color-input:  #444444 !default;
+$height-input: 40px !default;
+$padding-input: .375rem .75rem !default;
+$font-family-input: $PrimaryLight !default;
+$font-size-input: 12px !default;
+$transition-input: border-color .15s ease-in-out !default;
+$border-radius-input: 2px !default;
+$background-input: transparent !default;
+$hover-input: none !default;
+$placeholder-color: lighten($color-input, 15) !default;
+$placeholder-font-size: $font-size-input !default;
+
+$hover-input-enable: false !default;
+
+$size-checkbox: 16px !default;
+$size-radiobutton: 14px !default;
+
+
+
+$label-color: $black !default;
+$label-font-size: 13px !default;
+$label-font-family: $PrimaryBold !default;
+$label-letter-spacing: normal !default;
+$label-text-transform: uppercase !default;
+
+$focus-border-color: #000 !default;
+$focus-box-shadow: none !default;
+
+@mixin baseInput() {
+  color: $color-input;
+  width: 100%;
+  border: 1px solid $border-input;
+  height: $height-input;
+  display: block;
+  padding: $padding-input;
+  font-size: $font-size-input;
+  transition: $transition-input ;
+  box-sizing: border-box;
+  line-height: 1.5;
+  border-radius: $border-radius-input !important;
+  font-family: $font-family-input;
+  background-color: $background-input;
+  @if $hover-input-enable {
+    &:hover {
+      border-color: $hover-input;
+      transition: $transition-input;
+    }
+  }
+  &:focus {
+    outline: none;
+    transition: all .15s ease-in-out;
+    border-color: $focus-border-color;
+    box-shadow: $focus-box-shadow;
+  }
+  &::placeholder {
+    color: $placeholder-color;
+    font-size: $placeholder-font-size;
+  }
+  &:disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+}
+
+
+
+.checkbox{
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__name{
+    margin-left: 8px;
+  }
+  &__content{
+      display: flex;
+      align-items: flex-start;
+      color: $placeholder-color;
+      cursor: pointer;
+      transition: all .15s ease-in-out;
+      &:hover{
+        .checkbox__box{
+          transition: all .15s ease-in-out;
+          border: solid 1px $hover-input;
+        }
+        .checkbox__name{
+          // transition: all .15s ease-in-out;
+          // color: $hover-input;
+        }
+      }
+  }
+  &__box{
+    display: inline-block;
+    position: absolute;
+    width: $size-checkbox;
+    height: $size-checkbox;
+    left: 0;
+    top: 1px;
+    border-radius: 3px;
+    border: solid 1px $border-input;
+  }
+  input[type="checkbox"] {
+    opacity: 0;
+  }
+  input[type="checkbox"]:checked {
+    & ~ .checkbox__box {
+      border: solid 1px $black;
+      background-color: $black;
+      &:before{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'icomoon' !important;;
+        content: '\e909';
+        font-size: 10px;
+        color: $white;
+      }
+    }
+    // & ~ .checkbox__name{
+    //   color: $hover-input;
+    // }
+  }
+
+  &.white{
+    input[type="checkbox"]:checked {
+      & ~ .checkbox__box {
+        border: solid 1px $black;
+        background-color: transparent;
+        &:before{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'icomoon' !important;;
+          content: '\e909';
+          font-size: 13px;
+          color: $black;
+        }
+      }
+    } 
+
+    .checkbox__box{
+      display: inline-block;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      left: 0;
+      top: 1px;
+      border-radius: 0px;
+      border: solid 1px $border-input;
+    }
+    .checkbox__name{
+      font-size: 13px;
+      color: $black;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.radiobutton{
+  display: flex;
+  align-items: center;
+  position: relative;
+  &__content{
+      display: flex;
+      align-items: center;
+      color: $placeholder-color;
+      cursor: pointer;
+      transition: all .15s ease-in-out;
+      &:hover{
+        .radiobutton__box{
+          transition: all .15s ease-in-out;
+          border: solid 1px $hover-input;
+        }
+        .radiobutton__name{
+          transition: all .15s ease-in-out;
+          color: $hover-input;
+        }
+      }
+  }
+  &__box{
+    display: inline-flex;
+    position: absolute;
+    width: $size-checkbox;
+    height: $size-checkbox;
+    left: 0;
+    border: solid 1px $border-input;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="radio"] {
+    opacity: 0;
+  }
+  input[type="radio"]:checked {
+    & ~ .radiobutton__box {
+      border: solid 1px $hover-input;
+      &:before{
+        width: 8px;
+        height: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'icomoon' !important;
+        content: '';
+        font-size: $size-checkbox;;
+        color: $hover-input;
+        background: #000;
+        border-radius: 50%;
+      }
+    }
+    & ~ .radiobutton__name{
+      color: $hover-input;
+    }
+  }
+  
+  &__name{//added
+    width: 190px; 
+    font-size: 13px;
+    letter-spacing: 1.1px;
+    margin-left: 14px;
+  }
+}
+
+
+
+@mixin baseSelect() {
+  position: relative;
+  &::before{
+    content: "\e900";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 12px;
+    z-index: 1;
+    pointer-events: none;
+  }
+  select{
+    width: 100%;
+    height: $height-input;
+    min-width: 100px;
+    appearance: none;
+    padding: .375rem 1.5rem .375rem .75rem;
+    box-sizing: border-box;
+    border-color: $border-input;
+    border-radius: $border-radius-input;
+    cursor: pointer;
+    font-family: $font-family-input;
+    font-size: $font-size-input;
+    transition: $transition-input;
+    background-color: transparent;
+    @if $hover-input-enable {
+      &:hover{
+        border-color: $hover-input;
+        transition: $transition-input;
+      }
+    }
+    &:focus {
+      outline: none;
+      transition: all .15s ease-in-out;
+      border-color: $focus-border-color;
+      box-shadow: $focus-box-shadow;
+    }
+  }
+}
+
+@mixin positionGrop() {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  position: relative;
+  @content;
+}
+
+@mixin normal-style() {
+  label {
+    margin-bottom: 12px;
+    color: $label-color;
+    font-size: $label-font-size;
+    font-family: $label-font-family;
+    letter-spacing: $label-letter-spacing;
+    text-transform: $label-text-transform;
+  }
+}
+
+@mixin select(){
+  @include baseSelect();
+}
+
+.form {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    flex-direction: column;
+    @include desde(640px){
+      flex-direction: row;
+    }
+    &__col {
+      padding-right: 10px;
+      padding-left: 10px;
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+    &.wrap{
+      flex-wrap: wrap;
+      flex-direction: row;
+      .form{
+        &__row{
+          &__col{
+            width:100%;
+            flex-basis: initial;
+            box-sizing: border-box;
+            //@include desde(580px){
+            @include desde(721px){
+              width: 50%;
+              max-width: 50%;
+            }
+            // @include desde-hasta(800px, 899px){
+            //   width: 33.333333333333333%;
+            // }
+            // @include desde(900px){
+            //   width: 100%;
+            //   max-width: 100%;
+            // }
+            // @include desde(1000px){
+            //   width: 50%;
+            //   max-width: 50%;
+            // }
+            @include desde(1100px){
+              width: 33.333333333333333%;
+              max-width: 33.333333333333333%;
+            }
+          }
+        }
+      }
+    }
+  }
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+    appearance: none;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="url"],
+  input[type="tel"],
+  textarea {
+    @include baseInput();
+  }
+  textarea {
+    height: 100%;
+    height: 95px;
+    resize: none;
+  }
+  &__group {
+    @include positionGrop();
+    @include normal-style();
+    &__select{
+      @include select();
+      // select{
+      //   border-top-right-radius: 0;
+      //   border-bottom-right-radius: 0;
+      //   border-right: none;
+      // }
+    }
+    &__select-input{
+      display: flex;
+      flex-direction: row;
+      .form__group__select{
+        width: 260px;
+        margin-right: 0;
+
+        select{
+          height: 100%;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          border-right-width: 0;
+
+          @include desde(s){
+            // border-right-width: 1px;
+          }
+
+          &:focus{
+            border-color: $border-input;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+        }
+      }
+      .input{
+        width: 100%;
+      }
+      input{
+        width: 100%;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+      }
+    }
+
+    &__radio-wrapper{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      @include desde(s){
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+// message
+
+.form-error{
+  &-all{
+    margin-top: 20px;
+    text-align: center;
+  }
+}

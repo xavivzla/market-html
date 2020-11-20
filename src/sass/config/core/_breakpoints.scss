@@ -1,0 +1,57 @@
+@mixin desde($medida){
+    @if map-has-key($breakpoints, $medida){
+        @media screen and (min-width: map-get($breakpoints, $medida)){
+            @content;
+        }
+    } @else  {
+        @media screen and (min-width: $medida){
+            @content;
+        }
+    }
+}
+@mixin only($medida){
+    @if map-has-key($breakpoints, $medida){
+        @media only screen and (min-width: map-get($breakpoints, $medida)){
+            @content;
+        }
+    } @else  {
+        @media only screen and (min-width: $medida){
+            @content;
+        }
+    }
+}
+
+@mixin hasta($medida){
+    @if map-has-key($breakpoints, $medida){
+        @media screen and (max-width: map-get($breakpoints, $medida)){
+            @content;
+        }
+    } @else  {
+        @media screen and (max-width: $medida){
+            @content;
+        }
+    }
+}
+
+@mixin desde-hasta($desde, $hasta){
+    @if map-has-key($breakpoints, $desde) and map-has-key($breakpoints, $hasta) {
+        @media screen and (min-width: map-get($breakpoints, $desde)) and (max-width: map-get($breakpoints, $hasta)){
+            @content;
+        }
+    }
+    @else if map-has-key($breakpoints, $desde) and not map-has-key($breakpoints, $hasta){
+        @media screen and (min-width: map-get($breakpoints, $desde)) and (max-width: $hasta){
+            @content;
+        }
+    }
+    @else if map-has-key($breakpoints, $hasta) and not map-has-key($breakpoints, $desde){
+        @media screen and (min-width: $desde) and (max-width: map-get($breakpoints, $hasta)){
+            @content;
+        }
+    }
+    @else  {
+        @media screen and (min-width: $desde) and (max-width: $hasta){
+            @content;
+        }
+    }
+}
