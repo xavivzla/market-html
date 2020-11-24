@@ -1,7 +1,7 @@
 $transitionBtn: all .15s ease-in-out !default;
-$padding-btn: 1.3rem 4.3rem !default;
-$font-size-btn: 13px !default;
-$text-transform-btn: uppercase !default;
+$padding-btn: .5rem .5rem !default;
+$font-size-btn: 16px !default;
+$text-transform-btn: initial !default;
 $border-radius-btn: false !default;
 $border-radius-size-btn: 3px !default;
 $font-family-btn: $TertiaryMedium !default;
@@ -33,13 +33,13 @@ $letter-spacing-btn: 0.70px !default;
   @content;
 }
 
-.btn{
+#{$namespace}-btn{
   @extend %base-button;
   @include createButton();
 }
 
 @each $name, $value in $map-palette-button{
-  .btn-#{$name}{
+  #{$namespace}-btn-#{$name}{
     $hashover: map-has-key($value, hover);
     $typehover: type-of(map-get($value, hover));
       @include createButton(map-get($value, background), map-get($value, color), map-get($value, border));
@@ -60,6 +60,6 @@ $letter-spacing-btn: 0.70px !default;
   }
 }
 
-.btn-fluid{
+#{$namespace}-btn-fluid{
   width: 100%;
 }

@@ -1,4 +1,13 @@
 $map-palette-button:(
+  primary: (
+    background:			#e84976,
+    color:          $white,
+    border:         solid 1px #e84976,
+    hover: (
+      background-color: lighten(#e84976, 5),
+      border: solid 1px lighten(#e84976, 5),
+    )
+  ),
   black: (
     background:			$btn-black,
     color:          #cacaca,

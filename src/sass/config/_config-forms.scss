@@ -294,7 +294,7 @@ $focus-box-shadow: none !default;
   @include baseSelect();
 }
 
-.form {
+#{$namespace}-form {
   &__row {
     display: flex;
     flex-wrap: wrap;
@@ -314,7 +314,7 @@ $focus-box-shadow: none !default;
     &.wrap{
       flex-wrap: wrap;
       flex-direction: row;
-      .form{
+      #{$namespace}-form{
         &__row{
           &__col{
             width:100%;
@@ -381,7 +381,7 @@ $focus-box-shadow: none !default;
     &__select-input{
       display: flex;
       flex-direction: row;
-      .form__group__select{
+      #{$namespace}-form__group__select{
         width: 260px;
         margin-right: 0;
 
@@ -429,7 +429,7 @@ $focus-box-shadow: none !default;
 
 // message
 
-.form-error{
+#{$namespace}-form-error{
   &-all{
     margin-top: 20px;
     text-align: center;
