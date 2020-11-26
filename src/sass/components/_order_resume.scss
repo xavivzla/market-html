@@ -1,16 +1,137 @@
 #{$namespace} {
   &-resume {
+    padding: 28px 0;
+    border: solid 1px #d5d5d5;
+    background-color: #ffffff;
+    box-sizing: border-box;
     &__title {
       // font-family: MollenPersonalUse;
       font-size: 18px;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
-      line-height: 3;
       letter-spacing: normal;
       text-align: left;
       color: #323232;
+      padding: 0 26px;
     }
-    
+    &__sub {
+      font-family: MollenPersonalUse;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 3.86;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+      padding: 0 26px;
+    }
+    &__list {
+      padding: 0 26px;
+    }
+    &__item {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+      &__image {
+        max-width: 95px;
+        height: 100%;
+        img {
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      &__info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 14px;
+        &__name {
+          // font-family: MollenPersonalUse;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #323232;
+        }
+        &__price {
+          // font-family: MollenPersonalUse;
+          font-size: 13px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: var(--color-primary-bold);
+        }
+      }
+      &__num {
+        div {
+          background-color: var(--color-primary-bold);
+          color: $white;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    &__return {
+      padding: 12.7px 222px 12.5px 26.8px;
+      background-color: rgba($color: #d5d5d5, $alpha: 0.15);
+
+      a {
+        font-family: MollenPersonalUse;
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #727272;
+        text-decoration: underline;
+      }
+    }
+    &__info {
+      padding: 0 26px;
+      margin-top: 35px;
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        font-family: MollenPersonalUse;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #323232;
+        margin-bottom: 13px;
+      }
+    }
+    &__total {
+      padding: 0 26px;
+      display: flex;
+      justify-content: space-between;
+      font-family: MollenPersonalUse;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--color-primary-bold);
+      margin-top: 50px;
+    }
+    &__action {
+      padding: 0 26px;
+      margin-top: 40px;
+    }
   }
 }

@@ -1,14 +1,17 @@
 #{$namespace} {
   &-checkout {
-    #{$namespace}-form input[type=email],
-    #{$namespace}-form input[type=number],
-    #{$namespace}-form input[type=password],
-    #{$namespace}-form input[type=search],
-    #{$namespace}-form input[type=tel],
-    #{$namespace}-form input[type=text],
-    #{$namespace}-form input[type=url],
-    #{$namespace}-form textarea {
-      background: rgba(213, 213, 213, 0.3);
+    // #{$namespace}-form input[type=email],
+    // #{$namespace}-form input[type=number],
+    // #{$namespace}-form input[type=password],
+    // #{$namespace}-form input[type=search],
+    // #{$namespace}-form input[type=tel],
+    // #{$namespace}-form input[type=text],
+    // #{$namespace}-form input[type=url],
+    // #{$namespace}-form textarea {
+    //   background: rgba(213, 213, 213, 0.3);
+    // }
+    .container {
+      max-width: 1024px;
     }
     &__title {
       font-size: 36px;
@@ -23,11 +26,28 @@
     }
     &__content {
       display: flex;
+      flex-direction: column;
+      @media screen and(min-width: 768px) {
+        flex-direction: row;
+      }
     }
     &__box {
       padding: 43px 50px;
       border-radius: 12px;
       background-color: #ffffff;
+      margin-bottom: 30px;
+    }
+    &__left {
+      flex: 1;
+    }
+    &__right {
+      order: -1;
+      margin-bottom: 30px;
+      @media screen and(min-width: 768px) {
+        margin-left: 60px;
+        max-width: 363px;
+        order: 2;
+      }
     }
   }
 }
