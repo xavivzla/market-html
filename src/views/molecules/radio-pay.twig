@@ -1,0 +1,25 @@
+<div class="boxapi-radio-pay">
+    <input type="radio" name="pay" class="boxapi-radio-pay__input">
+    <div class="boxapi-radio-pay__cont">
+        <div class="boxapi-radio-pay__left">
+            <div class="boxapi-radio-pay__checked"></div>
+        </div>
+        <div class="boxapi-radio-pay__middle">
+            <div class="boxapi-radio-pay__name">
+                {{ name }}
+            </div>
+        </div>
+        <div class="boxapi-radio-pay__right">
+            <div class="boxapi-radio-pay__images">
+                <img class="boxapi-radio-pay__image" src="./assets/img/visa.jpg" alt="">
+                <img class="boxapi-radio-pay__image" src="./assets/img/bcp.png" alt="">
+                <img class="boxapi-radio-pay__image" src="./assets/img/master.png" alt="">
+            </div>
+        </div>
+        {% if desc %}
+        <div class="boxapi-radio-pay__desc">
+            {{ desc }}
+        </div>
+        {% endif %}
+    </div>
+</div>

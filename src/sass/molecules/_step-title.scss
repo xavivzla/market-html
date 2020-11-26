@@ -1,0 +1,39 @@
+  
+#{$namespace}-step-title{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 40px;
+  &__name{
+      margin-left: 10px;
+      font-family: $PrimaryBold;
+
+      // font-family: MollenPersonalUse;
+      font-size: 19px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.68;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+  }
+  &__step{
+      width: 30px;
+      height: 30px;
+      background: var(--color-primary-bold);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // font-family: Roboto;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.19;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+  }
+}

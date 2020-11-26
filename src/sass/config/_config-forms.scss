@@ -1,4 +1,4 @@
-$border-input: #929292 !default;
+$border-input: #d5d5d5 !default;
 $color-input:  #444444 !default;
 $height-input: 40px !default;
 $padding-input: .375rem .75rem !default;
@@ -18,11 +18,11 @@ $size-radiobutton: 14px !default;
 
 
 
-$label-color: $black !default;
+$label-color: #323232 !default;
 $label-font-size: 13px !default;
 $label-font-family: $PrimaryBold !default;
 $label-letter-spacing: normal !default;
-$label-text-transform: uppercase !default;
+$label-text-transform: initial !default;
 
 $focus-border-color: #000 !default;
 $focus-box-shadow: none !default;

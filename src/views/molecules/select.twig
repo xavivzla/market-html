@@ -1,0 +1,13 @@
+<div class="boxapi-form__group">
+    {% if label %}
+    <label for="">{{ label }}</label>
+    {% endif %}
+    <div class="boxapi-form__group__select">
+        <select>
+            <option disabled="" value="">Seleccione</option>
+            {% for option in options %}
+                <option value="">{{ option }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</div>

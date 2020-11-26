@@ -4,6 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   font-family: $PrimaryRegular;
+  background: #f9f9f9;
   &.active{
     overflow: hidden;
   }

@@ -9,19 +9,60 @@
 
 {% block content %}
     <div class="boxapi-checkout">
-
-        <div class="boxapi-checkout__wrapper">
-            <div class="boxapi-checkout__title">Completa tu compra</div>
-            <div class="boxapi-checkout__content">
-                <div class="boxapi-checkout__left">
-                    <button href="#" class="boxapi-btn boxapi-btn-primary">dsasd</button>
-                </div>
-                <div class="boxapi-checkout__right">
-
+        <form action="" class="form">
+            <div class="container">
+                <div class="boxapi-checkout__wrapper">
+                    <div class="boxapi-checkout__title">Completa tu compra</div>
+                    <div class="boxapi-checkout__content">
+                        <div class="boxapi-checkout__left">
+                            <div class="boxapi-checkout__box">
+                                <div class="boxapi-checkout__header">
+                                    {% include '../molecules/step-title.twig' with { name: 'Informacion básica', number: '1' } %}
+                                </div>
+                                <div class="boxapi-checkout__form">
+                                    <div class="boxapi-box__body">
+                                        <div class="boxapi-form">
+                                            <div class="boxapi-form__row">
+                                                <div class="boxapi-form__row__col">
+                                                    {% include '../molecules/input-basic.twig' with { type: 'text', label: 'Nombres' } %}
+                                                </div>
+                                                <div class="boxapi-form__row__col">
+                                                    {% include '../molecules/input-basic.twig' with { type: 'text', label: 'Apellido paterno' } %}
+                                                </div>
+                                            </div>
+                                             <div class="boxapi-form__row">
+                                                <div class="boxapi-form__row__col">
+                                                    {% include '../molecules/input-basic.twig' with { type: 'text', label: 'Apellido materno' } %}
+                                                </div>
+                                                <div class="boxapi-form__row__col">
+                                                    {% include '../molecules/select-input.twig' with { type: 'text', label: 'Documento de Identidad', options: ['DNI', 'CE', 'Pasaporte'] } %}
+                                                </div>
+                                            </div>
+                                            <div class="boxapi-form__row">
+                                                <div class="boxapi-form__row__col">
+                                                    {% include '../molecules/input-basic.twig' with { type: 'tel', label: 'Celular' } %}
+                                                </div>
+                                                <div class="boxapi-form__row__col">
+                                                    {% include '../molecules/input-basic.twig' with { type: 'email', label: 'Correo electrónico' } %}
+                                                </div>
+                                            </div>
+                                            <!-- <div class="boxapi-form__row">
+                                                <div class="boxapi-form__row__col boxapi-center">
+                                                    <a href="" class="boxapi-btn boxapi-btn-black">CONTINUAR</a>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxapi-checkout__right">
+                            {% include '../components/order-resume.twig' %}
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </form>
     </div>
 {% endblock %}
 {% block scripts %}

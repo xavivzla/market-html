@@ -1,0 +1,13 @@
+<div class="boxapi-radio-direction">
+    <input type="radio" name="direction" class="boxapi-radio-direction__input">
+    <div class="boxapi-radio-direction__cont">
+        <div class="boxapi-radio-direction__name">
+            {{ name }}
+        </div>
+        {% for desc in directions %}
+        <div class="boxapi-radio-direction__desc">
+            {{ desc }}
+        </div>
+        {% endfor %}
+    </div>
+</div>

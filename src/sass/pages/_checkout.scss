@@ -1,0 +1,33 @@
+#{$namespace} {
+  &-checkout {
+    #{$namespace}-form input[type=email],
+    #{$namespace}-form input[type=number],
+    #{$namespace}-form input[type=password],
+    #{$namespace}-form input[type=search],
+    #{$namespace}-form input[type=tel],
+    #{$namespace}-form input[type=text],
+    #{$namespace}-form input[type=url],
+    #{$namespace}-form textarea {
+      background: rgba(213, 213, 213, 0.3);
+    }
+    &__title {
+      font-size: 36px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: $title;
+      margin-bottom: 40px;
+    }
+    &__content {
+      display: flex;
+    }
+    &__box {
+      padding: 43px 50px;
+      border-radius: 12px;
+      background-color: #ffffff;
+    }
+  }
+}

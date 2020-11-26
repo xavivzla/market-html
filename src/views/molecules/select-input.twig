@@ -1,0 +1,14 @@
+<div class="boxapi-form__group">
+    <label for="">{{ label }}</label>
+    <div class="boxapi-form__group__select-input">
+        <div class="boxapi-form__group__select">
+            <select>
+                <option disabled="" value="">Seleccione</option>
+                {% for option in options %}
+                    <option value="">{{ option }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <input name="receptor_phone" pattern="[0-9]{12}" placeholder="{{ placeholder }}" required="" type="{{ type }}" value="">
+    </div>
+</div>
