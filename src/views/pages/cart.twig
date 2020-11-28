@@ -1,0 +1,68 @@
+{% extends '../layouts/base.twig' %}
+
+{% block styles %}
+    <style>
+    </style>
+{% endblock %}
+
+{% block title %}Cart empty{% endblock %}
+
+{% block content %}
+    <div class="boxapi-cart">
+      <div class="container">
+        <div class="boxapi-cart__title">
+          <strong>Mi carrito</strong>
+          (1 producto)
+        </div>
+        <div class="boxapi-cart__content">
+          <div class="boxapi-cart__left">
+            <div class="boxapi-cart__list">
+              {% include '../components/card-item-secondary.twig' %}
+              {% include '../components/card-item-secondary.twig' %}
+            </div>
+          </div>
+          <div class="boxapi-cart__right">
+            <div class="boxapi-cart-resume">
+              <div class="boxapi-cart-resume__title">
+                Resumen de la orden
+              </div>
+              <div class="boxapi-cart-resume__coupon active">
+                <div class="boxapi-cart-resume__coupon__collapse">
+                  <span>Aplicar cupon de descuento</span>
+                  <span class="icon-arrow-down"></span>
+                </div>
+                <div class="boxapi-cart-resume__coupon__input">
+                  <input type="text">
+                  <button class="boxapi-btn boxapi-btn-black">Aplicar</button>
+                </div>
+              </div>
+              <div class="boxapi-cart-resume__list">
+                <div class="boxapi-cart-resume__item">
+                  <span>Subtotal de productos</span>
+                  <span>S/. 259.90</span>
+                </div>
+
+                <div class="boxapi-cart-resume__item">
+                  <span>Descuento</span>
+                  <span>S/. 0</span>
+                </div>
+
+                <div class="boxapi-cart-resume__item total">
+                  <span>Total</span>
+                  <span>S/. 259.90</span>
+                </div>
+              </div>
+
+              <div class="boxapi-cart-resume__action">
+                <button class="boxapi-btn boxapi-btn-primary boxapi-btn-fluid">Realizar el pago</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script> 
+    </script>
+{% endblock %}

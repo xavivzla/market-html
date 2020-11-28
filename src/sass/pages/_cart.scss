@@ -1,0 +1,143 @@
+#{$namespace} {
+  &-cart {
+    &-empty {
+      &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+      }
+      &__title {
+        color: var(--color-primary-bold);
+        font-size: 30px;
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+      &__action {
+        margin-top: 20px;
+      }
+    }
+    .container {
+      max-width: 1200px;
+    }
+    &__title {
+      margin-bottom: 36px;
+
+      font-family: MollenPersonalUse;
+    font-size: 24px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323232;
+    strong {
+      font-weight: bold;
+    }
+    }
+    &__content {
+      @include desde(s) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &__left {
+      @include desde(s) {
+        flex: 1;
+        max-width: 640px;
+      }
+    }
+
+    &__right {
+      @include desde(s) {
+        margin-left: 30px;
+      }
+    }
+
+    &-resume {
+      background-color: #ffffff;
+      padding: 25px 0;
+      &__title {
+        font-family: MollenPersonalUse;
+        font-size: 18px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 3;
+        letter-spacing: normal;
+        text-align: left;
+        color: #323232;
+        padding: 0 25px;
+        margin-bottom: 10px;
+      }
+      &__coupon {
+        background-color: rgba($color: #d5d5d5, $alpha: 0.15);
+        padding: 18px 30px;
+        &__collapse {
+          display: flex;
+          justify-content: space-between;
+          opacity: 0.8;
+          font-family: MollenPersonalUse;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #727272;
+          margin-bottom: 18px;
+        }
+        &.active {
+          #{$namespace}-cart-resume__coupon__collapse {
+            span:last-child {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        &__input {
+          input {
+            padding: 0 0px 0 21.2px;
+            height: 36.4px;
+            border: solid 1px rgba(213, 213, 213, 0.4);
+            background-color: #ffffff;
+          }
+          .boxapi-btn {
+            background-color: #323232;
+          }
+        }
+      }
+      &__list {
+        padding: 25px;
+      }
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        font-family: MollenPersonalUse;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #323232;
+        margin-bottom: 13px;
+        &.total {
+          font-family: MollenPersonalUse;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 3.38;
+          letter-spacing: normal;
+          text-align: left;
+          color: var(--color-primary-bold);
+        }
+      }
+      &__action {
+        padding: 0 25px;
+      }
+    }
+  }
+}

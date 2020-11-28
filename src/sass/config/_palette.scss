@@ -42,3 +42,7 @@ $red:               #cb213b;
 $red-topitop:       #fd0102;
 $red-heart:         #ca011a;
 $bg-outfit: #F2F2F2;
+
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}

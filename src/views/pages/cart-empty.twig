@@ -1,0 +1,32 @@
+{% extends '../layouts/base.twig' %}
+
+{% block styles %}
+    <style>
+    </style>
+{% endblock %}
+
+{% block title %}Cart empty{% endblock %}
+
+{% block content %}
+    <div class="boxapi-cart">
+      <div class="container">
+          <div class="boxapi-cart-empty">
+              <div class="boxapi-cart-empty__content">
+                  <div class="boxapi-cart-empty__img">
+                      <img src="./assets/img/bag.png" alt="">
+                  </div>
+                  <div class="boxapi-cart-empty__title">
+                      Tu carrito esta vacio
+                  </div>
+                  <div class="boxapi-cart-empty__action">
+                      <a href="/" class="boxapi-btn boxapi-btn-primary">Agregar productos</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script> 
+    </script>
+{% endblock %}

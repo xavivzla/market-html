@@ -1,0 +1,134 @@
+#{$namespace} {
+  &-item-secondary {
+    padding: 7px 16px 7px 7.8px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 18px;
+    &__content {
+      display: flex;
+      align-items: center;
+      @include desde(xs) {
+        justify-content: space-between;
+      }
+    }
+    &__info {
+      display: none;
+      @include desde(xs) {
+        display: block;
+        margin-left: 20px;
+      }
+      @include desde(m) {
+        margin-left: 40px;
+      }
+    }
+    &__left {
+      height: 130px;
+      width: 150px;
+      @include desde(xs) {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex: 1;
+        align-items: center;
+      }
+    }
+    &__right {
+      margin-left: 20px;
+      @include desde(xs) {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+    &__img {
+      height: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &__title {
+      font-family: MollenPersonalUse;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba(50, 50, 50, 0.75);
+    }
+    &__sku {
+      font-family: MollenPersonalUse;
+      font-size: 10px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba(114, 114, 114, 0.75);
+    }
+    &__price {
+      font-family: MollenPersonalUse;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.88;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--color-primary-bold);
+    }
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__add {
+      padding: 10px 16.7px 10px 15.7px;
+      border-radius: 50px;
+      background-color: rgba($color: #d5d5d5, $alpha: 0.3);
+      display: flex;
+      align-items: center;
+      font-family: MollenPersonalUse;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba($color: #323232, $alpha: 0.9);
+      span {
+        margin-right: 5px;
+      }
+      @include desde(xs) {
+        margin-left: 20px;
+      }
+    }
+    &__remove {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: rgba(var(--color-primary-bold-rgb), .1);
+      span {
+        color: var(--color-primary-bold);
+      }
+      @include desde(xs) {
+        margin-left: 20px;
+      }
+    }
+    &__mobile__info {
+      #{$namespace}-item-secondary__info {
+        display: block;
+        @include desde(xs) {
+          display: none;
+        }
+      }
+    }
+  }
+}
