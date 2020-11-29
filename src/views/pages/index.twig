@@ -2,22 +2,79 @@
 
 {% block styles %}
     <style>
-        .sds{
-            background: red;
-        }
-
+        
     </style>
 {% endblock %}
 
-{% block title %}prueba{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block content %}
-    <div class="prueba">
-        <h1>Market</h1>
+    <div class="boxapi-home-site">
+        <!--=========================== INICIA BANNER PRINCIAL ===========================-->
+        <div class="container-fluid">
+            <div class="boxapi-home-site__banner">
+                <img src="https://i1.wp.com/maestrodelviolonchelo.com/wp-content/uploads/2017/12/christmas-1911637_1920.jpg?ssl=1" alt="banner"/>
+                <div class="boxapi-home-site__boxText">
+                    <h3 class="boxapi-home-site__banner-title1">
+                       Bienvenidos a tu
+                    </h3>
+                    <h1 class="boxapi-home-site__banner-title2">
+                        tienda de regalos
+                    </h1>
+                    <p class="boxapi-home-site__banner-text">
+                        Progressively reintermediate high-payoff best practices via efficient data. Dynamically plagiarize granular systems.
+                    </p>
+                    <a href="#" class="btn btn-banner">Crea tu lista de regalos</a>
+                    <div class="boxapi-home-site__scroll-box">
+                        <a href="#" class="ancla-desliza">
+                            <span class="icon-mouse"></span>
+                            <span>Deslizar </br> hacia abajo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=========================== FIN BANNER PRINCIAL ===========================-->
+
+        
+        <!--=========================== INICIA FORM-REGALOS ===========================-->
+        <div class="container">
+            <div class="boxapi-home-site__gift-card">
+                <div class="boxapi-home-site__gift-card-content-left">
+                    <h2 class="boxapi-home-site__gift-title">
+                        Encuentra tu regalo perfecto
+                    </h2>
+                    <p class="boxapi-home-site__gift-text">
+                        Busca entre los cientos de productos que tenemos para ti y elige el mejor obsequio según la ocasión
+                    </p>
+        
+                </div>
+                <div class="boxapi-home-site__gift-card-content-right">
+                    <div class="boxapi-form__row">
+                        <div class="boxapi-form__row__col">
+                            {% include '../molecules/select-input.twig' with { type: 'text', label: 'Género', options: ['Ragalo-1', 'Regalo-2', 'Regalo-3'] } %}
+                        </div>
+                        <div class="boxapi-form__row__col">
+                            {% include '../molecules/select-input.twig' with { type: 'text', label: 'Edad', options: ['Ragalo-1', 'Regalo-2', 'Regalo-3'] } %}
+                        </div>
+                        <div class="boxapi-form__row__col">
+                            {% include '../molecules/select-input.twig' with { type: 'text', label: 'Ocasión', options: ['Ragalo-1', 'Regalo-2', 'Regalo-3'] } %}
+                        </div>
+                    </div>
+                    <button class="favorito-add-to-car"> Agregar al carrito</button>
+                    <div class="eliminar-favorito">
+                        <a href="#">X</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=========================== FIN FORM-REGALOS ===========================-->
     </div>
 {% endblock %}
 {% block scripts %}
     <script> 
         console.log("prueba")
+        
     </script>
 {% endblock %}
