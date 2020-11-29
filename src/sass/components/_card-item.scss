@@ -1,0 +1,72 @@
+#{$namespace} {
+  &-card-item {
+    border-radius: 12px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    &__top {
+      position: relative;
+      img {
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+    &__offer {
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      background-color: var(--color-primary-bold);
+      color: $white;
+      padding: 5px 12px;
+      border-radius: 12px;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &__wishlist {
+      position: absolute;
+      bottom: 16px;
+      right: 24px;
+      width: 43px;
+      height: 43px;
+      border: solid 1px rgba(213, 213, 213, 0.5);
+      background-color:rgba($color: #323232, $alpha: 0.6);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-size: 20px;
+        color: $white;
+      }
+    }
+    &__bottom {
+      padding: 20px;
+      background: $white;
+    }
+    &__title {
+      font-family: MollenPersonalUse;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+    }
+    &__two {
+      display: flex;
+      justify-content: space-between;
+      font-family: MollenPersonalUse;
+      font-size: 15px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #727272;
+      margin-top: 16px;
+    }
+  }
+}
