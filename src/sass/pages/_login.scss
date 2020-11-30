@@ -1,0 +1,45 @@
+#{$namespace} {
+  &-login{
+    .boxapi-form input[type=email], .boxapi-form input[type=number], .boxapi-form input[type=password], .boxapi-form input[type=search], .boxapi-form input[type=tel], .boxapi-form input[type=text], .boxapi-form input[type=url], .boxapi-form textarea {
+      background: $white;
+    }
+    .boxapi-btn {
+      margin-bottom: 30px;
+    }
+    &__actions {
+      display: flex;
+      flex-direction: column;
+    }
+    &__register {
+      color: var(--color-primary);
+    }
+    &__restore {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      margin-bottom: 14px;
+      color: #727272;
+    }
+    &__content {
+      max-width: 640px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+    &__title {
+      font-family: MollenPersonalUse;
+      font-size: 19px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.68;
+      letter-spacing: normal;
+      text-align: center;
+      color: #323232;
+    }
+  }
+}

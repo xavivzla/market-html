@@ -1,0 +1,48 @@
+{% extends '../layouts/base.twig' %}
+
+{% block styles %}
+    <style>
+    </style>
+{% endblock %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="boxapi-login">
+  <div class="container">
+    <div class="boxapi-login__content">
+      <div class="boxapi-login__title">Iniciar sesión</div>
+      <div class="boxapi-login__social">
+        <div class="boxapi-login__facebook"></div>
+        <div class="boxapi-login__google"></div>
+      </div>
+      <div class="boxapi-login__form boxapi-form">
+        <div class="boxapi-form__row">
+          <div class="boxapi-form__row__col">
+            {% include '../molecules/input-basic.twig' with { type: 'text', label: 'Correo electrónico' } %}
+          </div>
+        </div>
+  
+        <div class="boxapi-form__row">
+          <div class="boxapi-form__row__col">
+            {% include '../molecules/input-basic.twig' with { type: 'password', label: 'Contraseña' } %}
+          </div>
+        </div>
+
+        <div class="boxapi-login__actions">
+          <button class="boxapi-btn boxapi-btn-primary">Iniciar Sesión</button>
+          <a href="" class="boxapi-login__restore">¿Olvidaste tu contraseña?</a>
+          <a href="" class="boxapi-btn boxapi-login__register">Registrate ahora</a>
+
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block scripts %}
+    <script> 
+    </script>
+{% endblock %}
