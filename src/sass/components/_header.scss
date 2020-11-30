@@ -1,0 +1,123 @@
+#{$namespace} {
+  &-header {
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+    }
+    &__logo {
+      max-width: 100px;
+      margin-right: 20px;
+    }
+    &__menu {
+      font-size: 20px;
+    }
+    &__profile {
+      font-size: 20px;
+    }
+    &__wishlist {
+      margin: 0 20px;
+      position: relative;
+      font-size: 20px;
+      &__num {
+        position: absolute;
+        padding: 2.8px 3px;
+        min-width: 14px;
+        min-height: 14px;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: $black;
+        color: $white;
+        font-family: MollenPersonalUse;
+        font-size: 9px;
+        font-weight: bold;
+        top: -13px;
+        right: -10px;
+        line-height: 9px;
+      }
+    }
+    &__cart {
+      display: flex;
+      align-items: center;
+      &__icon {
+        position: relative;
+        font-size: 20px;
+      }
+      &__text {
+        display: none;
+        @include desde(m) {
+          display: block;
+          margin-left: 15px;
+          font-family: MollenPersonalUse;
+          font-size: 15px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.4;
+          letter-spacing: normal;
+          text-align: left;
+          color: #323232;
+        }
+      }
+      &__num {
+        position: absolute;
+        padding: 2.8px 3px;
+        min-width: 14px;
+        min-height: 14px;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: $black;
+        color: $white;
+        font-family: MollenPersonalUse;
+        font-size: 9px;
+        font-weight: bold;
+        top: -13px;
+        right: -10px;
+        line-height: 9px;
+      }
+    }
+    &__search {
+      display: none;
+      @include desde(m) {
+        display: flex;
+        border-radius: 25px;
+        border: solid 1.2px #d5d5d5;
+        background-color: rgba($color: #d5d5d5, $alpha: .3);
+        align-items: center;
+        padding: 12px 25px;
+        margin-left: 80px;
+        span {
+          pointer-events: none;
+        }
+        input {
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          box-shadow: none;
+          border: none;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

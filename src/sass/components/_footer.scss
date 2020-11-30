@@ -1,0 +1,144 @@
+#{$namespace} {
+  &-footer {
+    background: $white;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding: 14px 0;
+      @include desde(m) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        padding: 80px 0 60px 0;
+        grid-column-gap: 20px;
+      }
+    }
+    &__item {
+      display: none;
+      &-start,
+      &-end {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      &-start {
+        @include desde(m) {
+          order: -1;
+        }
+      }
+      &-end {
+        order: -1;
+        @include desde(m) {
+          order: 7;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+      }
+      @include desde(m) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &__logo {
+      display: none;
+      @include desde(m) {
+        display: block;
+      }
+    }
+    &__phone {
+      font-family: MollenPersonalUse;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+      a {
+        color: var(--color-primary);
+        @include desde(m) {
+          color: #323232;
+        }
+      }
+      @include desde(m) {
+        font-size: 28px;
+      }
+    }
+    &__social {
+      &__title {
+        font-family: MollenPersonalUse;
+        font-size: 13px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.46;
+        text-align: center;
+        letter-spacing: normal;
+        color: #323232;
+      }
+      &__list {
+        justify-content: center;
+        display: flex;
+        margin-top: 6px;
+      }
+      &__item {
+        width: 30px;
+        height: 30px;
+        border: solid 1px #d5d5d5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &__list {
+      @include desde(m) {
+        display: flex;
+        flex-direction: column;
+        a {
+          font-family: MollenPersonalUse;
+          font-size: 15px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.4;
+          letter-spacing: normal;
+          text-align: left;
+          color: #323232;
+        }
+      }
+    }
+    &__title {
+      font-family: MollenPersonalUse;
+      font-size: 15px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+      margin-bottom: 18px;
+    }
+    &__copy {
+      opacity: 0.65;
+      font-family: MollenPersonalUse;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+      margin-top: 22px;
+      @include desde(m) {
+        font-size: 14px;
+      }
+    }
+  }
+}
