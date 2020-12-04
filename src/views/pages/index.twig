@@ -13,7 +13,7 @@
         <!--=========================== INICIA BANNER PRINCIAL ===========================-->
         <div class="container-fluid">
             <div class="boxapi-home-site__banner">
-                <img src="https://i1.wp.com/maestrodelviolonchelo.com/wp-content/uploads/2017/12/christmas-1911637_1920.jpg?ssl=1" alt="banner"/>
+                <!-- {# <img src="https://i1.wp.com/maestrodelviolonchelo.com/wp-content/uploads/2017/12/christmas-1911637_1920.jpg?ssl=1" alt="banner"/> #} -->
                 <div class="boxapi-home-site__boxText">
                     <h3 class="boxapi-home-site__banner-title1">
                        Bienvenidos a tu
@@ -24,11 +24,11 @@
                     <p class="boxapi-home-site__banner-text">
                         Progressively reintermediate high-payoff best practices via efficient data. Dynamically plagiarize granular systems.
                     </p>
-                    <a href="#" class="btn btn-banner">Crea tu lista de regalos</a>
+                    <a href="#" class=" boxapi-home-site__btn-banner">Crea tu lista de regalos</a>
                     <div class="boxapi-home-site__scroll-box">
                         <a href="#" class="ancla-desliza">
-                            <span class="icon-mouse"></span>
-                            <span>Deslizar </br> hacia abajo</span>
+                            <span class="boxapi-home-site__icon-mouse icon-mouse"></span>
+                            <span class="boxapi-home-site__ancle-text">Deslizar </br> hacia abajo</span>
                         </a>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
         <!--=========================== FIN BANNER PRINCIAL ===========================-->
 
         
-        <!--=========================== INICIA FORM-REGALOS ===========================-->
+        <!--=========================== INICIA FORM-SELECT-REGALOS ===========================-->
         <div class="container">
             <div class="boxapi-home-site__gift-card">
                 <div class="boxapi-home-site__gift-card-content-left">
@@ -49,27 +49,338 @@
                     </p>
         
                 </div>
-                <div class="boxapi-home-site__gift-card-content-right">
-                    <div class="boxapi-form__row">
-                        <div class="boxapi-form__row__col">
-                            {% include '../molecules/select-input.twig' with { type: 'text', label: 'Género', options: ['Ragalo-1', 'Regalo-2', 'Regalo-3'] } %}
+                <div class="boxapi-home-site__gift-card-content-right ">
+                    <div class="boxapi-form">
+                        <div class="boxapi-form__row">
+                            <div class="boxapi-form__row__col">
+                                {% include '../molecules/select.twig' with { type: 'select', label: 'Género', options: ['Ragalo-1', 'Regalo-2', 'Regalo-3'] } %}
+                            </div>
+                            <div class="boxapi-form__row__col ">
+                                {% include '../molecules/select.twig' with { type: 'select', label: 'Edad', options: ['Ragalo-1', 'Regalo-2', 'Regalo-3'] } %}
+                            </div>
+                            <div class="boxapi-form__row__col ">
+                                {% include '../molecules/select.twig' with { type: 'select', label: 'Ocasión', options: ['Ragalo-1', 'Regalo-2', 'Regalo-3'] } %}
+                            </div>
+                            <button class="boxapi-btn  boxapi-btn-primary boxapi-home-site__btn-buscar "> Buscar</button>
                         </div>
-                        <div class="boxapi-form__row__col">
-                            {% include '../molecules/select-input.twig' with { type: 'text', label: 'Edad', options: ['Ragalo-1', 'Regalo-2', 'Regalo-3'] } %}
-                        </div>
-                        <div class="boxapi-form__row__col">
-                            {% include '../molecules/select-input.twig' with { type: 'text', label: 'Ocasión', options: ['Ragalo-1', 'Regalo-2', 'Regalo-3'] } %}
-                        </div>
-                    </div>
-                    <button class="favorito-add-to-car"> Agregar al carrito</button>
-                    <div class="eliminar-favorito">
-                        <a href="#">X</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--=========================== FIN FORM-REGALOS ===========================-->
+        <!--=========================== FIN FORM-SELECT-REGALOS ===========================-->
+
+        <!--=========================== INICIA CARD-PROMO ===========================-->
+        <div class="boxapi-home-site__card-promo1">
+            <div class="boxapi-home-site__img-promo">
+               <img src="https://images.unsplash.com/photo-1576346618381-facf2a17af3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=745&q=80" alt="" width="" height="">  
+            </div>
+            <div class="boxapi-home-site__info-promo">
+                <h2 class="boxapi-home-site__title-promo">
+                    TEMPORADA NAVIDEÑA
+                </h2>
+                <div class="boxapi-home-site__description-promo">
+                    <p>
+                        Aprovecha las fechas de promoción y encuentra el regalo perfecto para esta navidad
+                    </p>
+                </div>
+                <div class="boxapi-home-site__rasataldo-promo">
+                    DESDE  07 AL 20 DE DICIEMBRE
+                </div>
+                <div class="boxapi-home-site__ancla-promo">
+                    <a href="#">Ver producto</a>
+                </div>
+            </div>
+        </div>
+        <!--=========================== FIN CARD-PROMO ===========================-->
+
+                <!--=========================== INICIA CARD-PROMO ===========================-->
+                <div class="boxapi-home-site__card-promo2">
+                    
+                    <div class="boxapi-home-site__info-promo">
+                        <h2 class="boxapi-home-site__title-promo">
+                            TEMPORADA NAVIDEÑA
+                        </h2>
+                        <div class="boxapi-home-site__description-promo">
+                            <p>
+                                Aprovecha las fechas de promoción y encuentra el regalo perfecto para esta navidad
+                            </p>
+                        </div>
+                        <div class="boxapi-home-site__rasataldo-promo">
+                            DESDE  07 AL 20 DE DICIEMBRE
+                        </div>
+                        <div class="boxapi-home-site__ancla-promo">
+                            <a href="#">Ver producto</a>
+                        </div>
+                    </div>
+                    <div class="boxapi-home-site__img-promo2">
+                         <img src="https://images.unsplash.com/photo-1487349384428-12b47aca925e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80" alt="" width="" height="">  
+                     </div>
+                </div>
+                <!--=========================== FIN CARD-PROMO ===========================-->
+                <!--=========================== INICIO SLIDE GIFT ===========================-->
+                <div class="boxapi-home-site__categori">
+                    <div class="container-fluid">
+                        <div class="boxapi-home-site__title-categori">
+                            Siempre hay una ocasión especial para ser felíz
+                        </div>
+                        <div class="boxapi-home-site__row-img">
+                            <div class="boxapi-home-site__item-img">
+                                <img src="/assets/img/aniversario.jpg"/>
+                                <div class="boxapi-home-site__text-img">Aniversarios</div>
+                            </div>
+                            <div class="boxapi-home-site__item-img">
+                                <img src="/assets/img/navidad.jpg"/>
+                                <div class="boxapi-home-site__text-img">Navidad</div>
+                            </div>
+                            <div class="boxapi-home-site__item-img">
+                                <img src="/assets/img/Dia-del-padre.jpg"/>
+                                <div class="boxapi-home-site__text-img">Día del padre</div>
+                            </div>
+                            <div class="boxapi-home-site__item-img">
+                                <img src="/assets/img/Dias-de-la-madre.jpg" alt=""/>
+                                <div class="boxapi-home-site__text-img">Día de la madre</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--=========================== FIN SLIDE GIFT ===========================-->
+
+                <!--=========================== INICIO DESCUENTOS Y PROMOCIONES ===========================-->
+                <div class="boxapi-home-site__descuentos-promo">
+                    <div class="container">
+                        <div class="boxapi-home-site__title-descuentos">
+                            Descuentos y promociones
+                        </div>
+
+                        <div class="boxapi-home-site__row-img">
+                            <div class="boxapi-home-site__descuento-item">
+                                <img src="/assets/img/descuento1.svg" alt="">
+                                <div class="boxapi-home-site__box-descuento">
+                                    <div class="boxapi-home-site__porcentaje">
+                                        30%
+                                    </div>
+                                    <div class="boxapi-home-site__text-descuento">
+                                        de descuento en accesorios para damas
+                                    </div>
+                                    <div class="boxapi-home-site__ancla-descuento">
+                                        <a href="#">Ver producto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxapi-home-site__descuento-item">
+                                <img src="/assets/img/slide-take-away-porfes-con-clase.svg" alt="">
+                                <div class="boxapi-home-site__box-descuento">
+                                    <div class="boxapi-home-site__porcentaje">
+                                        10%
+                                    </div>
+                                    <div class="boxapi-home-site__text-descuento">
+                                        de descuento en accesorios de cocina
+                                    </div>
+                                    <div class="boxapi-home-site__ancla-descuento">
+                                        <a href="#">Ver producto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="boxapi-home-site__row-img">
+                            <div class="boxapi-home-site__descuento-item">
+                                <img src="/assets/img/cocina-diseñada-por-Consentino.svg" alt="">
+                                <div class="boxapi-home-site__box-descuento">
+                                    <div class="boxapi-home-site__porcentaje">
+                                       5%
+                                    </div>
+                                    <div class="boxapi-home-site__text-descuento">
+                                         de descuento en accesorios de oficina
+                                    </div>
+                                    <div class="boxapi-home-site__ancla-descuento">
+                                        <a href="#">Ver producto</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="boxapi-home-site__descuento-item">
+                                <img src="/assets/img/smiling-lady-showing-purchase-to-friend-in-cafe.svg" alt="">
+                                <div class="boxapi-home-site__box-descuento">
+                                    <div class="boxapi-home-site__porcentaje">
+                                        10%
+                                    </div>
+                                    <div class="boxapi-home-site__text-descuento">
+                                        de descuento en regalo de cumpleaños
+                                    </div>
+                                    <div class="boxapi-home-site__ancla-descuento">
+                                        <a href="#">Ver producto</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--=========================== FIN DESCUENTOS Y PROMOCIONES ===========================-->
+
+                <!--=========================== INICIO PRODUCTOS EN OFERTAS ===========================-->
+                <div class="boxapi-home-site__product-ofert">
+                    <div class="container">
+                        <div class="boxapi-home-site__title-product-ofert">
+                            Últimos productos en oferta
+                        </div>
+                        <div class="boxapi-home-site__row-img">
+                            {% include '../components/producto-ofert.twig' %}
+                            {% include '../components/producto-ofert.twig' %}
+                        </div>
+                    </div>
+                </div>
+
+                <!--=========================== FIN PRODUCTOS EN OFERTAS ===========================-->
+
+                <!--=========================== INICIO ARTICULO TOP ===========================-->
+                <div class="boxapi-home-site__articulo-top">
+                    <div class="container">
+                        <div class="boxapi-home-site__title-articulo-top">
+                            Artículos top para regalar e inspirarte
+                        </div>
+                        <div class="boxapi-home-site__row-img">
+                            {% include '../components/card-item.twig' %}
+                            {% include '../components/card-item.twig' %}
+                            {% include '../components/card-item.twig' %}
+                            {% include '../components/card-item.twig' %}
+                        </div>
+                        <div class="boxapi-home-site__row-img">
+                            {% include '../components/card-item.twig' %}
+                            {% include '../components/card-item.twig' %}
+                            {% include '../components/card-item.twig' %}
+                            {% include '../components/card-item.twig' %}
+                        </div>
+                    </div>
+                </div>
+                <!--=========================== FIN ARTICULO TOP ===========================-->
+                 <!--=========================== INICIO SLIDE GIFT ===========================-->
+                 <div class="boxapi-home-site__categori">
+                    <div class="container-fluid">
+                        <div class="boxapi-home-site__title-categori">
+                            Cientos de productos en todas nuestras categorias
+                        </div>
+                        <div class="boxapi-home-site__row-img">
+                            <div class="boxapi-home-site__item-img">
+                                <img src="/assets/img/jonathan-francisca-YHbcum51JB0-unsplash.png"/>
+                                <div class="boxapi-home-site__text-img">Aniversarios</div>
+                            </div>
+                            <div class="boxapi-home-site__item-img">
+                                <img src="/assets/img/tony-lee-QtOFlR9VO1Y-unsplash.png"/>
+                                <div class="boxapi-home-site__text-img">Navidad</div>
+                            </div>
+                            <div class="boxapi-home-site__item-img">
+                                <img src="/assets/img/steven-libralon-Do1GQljlNk8-unsplash.png"/>
+                                <div class="boxapi-home-site__text-img">Día del padre</div>
+                            </div>
+                            <div class="boxapi-home-site__item-img">
+                                <img src="/assets/img/luis-arias-1mNAVJaPr-g-unsplash.png" alt=""/>
+                                <div class="boxapi-home-site__text-img">Día de la madre</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--=========================== FIN SLIDE GIFT ===========================-->
+
+                <!--=========================== INICIO ICONOS HOME ===========================-->
+                <div class="boxapi-home-site__icon-home">
+                    <div class="container">
+                        <div class="boxapi-home-site__row-img">
+                            <div class="boxapi-home-site__item-icon1">
+                                <img src="/assets/img/gift.jpg" alt="">
+                                <span>Personalizamos tus regalos</span>
+                            </div>
+                            <div class="boxapi-home-site__item-icon">
+                                <img src="/assets/img/balloons.jpg" alt="">
+                                <span>Ofertas sorprendentes</span>
+                            </div>
+                            <div class="boxapi-home-site__item-icon">
+                                <img src="/assets/img/call-center-agent.jpg" alt="">
+                                <span>Resolvemos tus dudas 24/7</span>
+                            </div>
+                            <div class="boxapi-home-site__item-icon">
+                                <img src="/assets/img/surface1.jpg" alt="">
+                                <span>Compras 100% seguras</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--=========================== FIN ICONOS HOME ===========================-->
+
+                 <!--=========================== INICIO COLABORADORES ===========================-->
+                 <div class="boxapi-home-site__calaboradores">
+                    <div class="container">
+                        <div class="boxapi-home-site__title-calaboradores">
+                            Cientos de productos en todas nuestras categorias
+                        </div>
+                        <div class="boxapi-home-site__row-img">
+                            <div class="boxapi-home-site__calaboradores-img">
+                                <img src="/assets/img/adidas-logo-black.png"/>
+                            </div>
+                            <div class="boxapi-home-site__calaboradores-img">
+                                <img src="/assets/img/zara-logo-opacity.png"/>
+                            </div>
+                            <div class="boxapi-home-site__calaboradores-img">
+                                <img src="/assets/img/adidas-logo-opacity.png"/>
+                            </div>
+                            <div class="boxapi-home-site__calaboradores-img">
+                                <img src="/assets/img/zara-logo-opacity.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--=========================== FIN COLABORADORES ===========================-->
+
+                <!--=========================== INICIO SUSCRIPCION ===========================-->
+
+                <!--=========================== FIN SUSCRIPCION ===========================-->
+                <div class="boxapi-home-site__suscripcion">
+                    <div class="container-fluid">
+                        <div class="boxapi-home-site__row-suscripcion">
+                            <div class="boxapi-home-site__suscripcion-left">
+                                <div class="boxapi-home-site__suscripcion-title">
+                                    Suscribete para recibir novedades
+                                </div>
+                                <div class="boxapi-home-site__suscripcion-text">
+                                    Obten la ultima información en eventos, promociones y descuentos en nuestra tienda
+                                </div>
+                                <div class="boxapi-form">
+                                    <div class="boxapi-home-site__row-form">
+                                        <input class="boxapi-home-site__input" type="text" placeholder="Tu correo electrónico">
+                                        <button class="boxapi-btn boxapi-btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boxapi-home-site__suscripcion-right">
+                                <div class="boxapi-home-site__suscripcion-title">
+                                    Hashtags populares
+                                </div>
+                                <div class="boxapi-home-site__row-hash">
+                                    <button class="boxapi-btn boxapi-btn-secondary">Fashion</button>
+                                    <button class="boxapi-btn boxapi-btn-secondary">Home office</button>
+                                    <button class="boxapi-btn boxapi-btn-secondary">Babies boy</button>
+                                    <button class="boxapi-btn boxapi-btn-secondary">Tech</button>
+                                </div>
+                                <div class="boxapi-home-site__row-hash">
+                                    <button class="boxapi-btn boxapi-btn-secondary">Tech</button>
+                                    <button class="boxapi-btn boxapi-btn-primary">Electronicos</button>
+                                    <button class="boxapi-btn boxapi-btn-secondary">Laptops</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
     </div>
 {% endblock %}
 {% block scripts %}
