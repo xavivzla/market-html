@@ -1,0 +1,257 @@
+#{$namespace} {
+    &-detail-brand{
+        width: 100%;
+        &__categori {
+            margin: 50px 0px;
+            padding: 10px;
+        }
+        &__categori-title{
+            margin: 20px 10px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.39;
+            letter-spacing: normal;
+            text-align: left;
+            color: #323232;
+        }
+        &__row-circle {
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+        }
+        &__item-cirlce {
+            text-align: center;
+            padding: 10px;
+        }
+        &__text-item {
+            width: 100px;
+            height: 40px;
+            margin: 5px 0px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.38;
+            letter-spacing: normal;
+            text-align: center;
+            color: #323232;
+        }
+        &__content {
+            width: 100%;
+            display: flex;
+            margin: 50px 0px;
+            justify-content: space-between;
+        }
+        &__left {
+            width: 20%;
+            margin-right: 5px;
+        }
+        &__dropdown {
+            padding: 5px;
+            margin: 10px 0px;
+        }
+        &__dropdown-btn {
+            width: 240px;
+            height: 50px;
+            padding: 5px 25px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: solid 2px rgba(213, 213, 213, 0.5);
+            background-color: #ffffff;
+            transition: all .3s ease-in 0s;
+        }
+        &__arrow-down {
+            padding-left: 5px;
+            img {
+                margin-left: 20px;
+            }
+        }
+        &__dropdown-container {
+            display: none;
+            background-color: #fff;
+            padding-left: 8px;
+        }
+        &__active {
+            background-color: green;
+            color: white;
+        }
+        &__sidenav {
+            display: flex;
+            flex-direction: column;
+            width: 240px;
+            height: 255px;
+            margin: 10px 0px;
+            padding: 21px 17px;
+            border: solid 2px rgba(213, 213, 213, 0.5);
+            background-color: #ffffff;
+            a {
+                font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: #323232;
+                padding: 15px 10px;
+            }
+        }
+        &__sidenav-btn {
+            padding: 5px 10px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        &__sidenav-precio {
+            width: 242px;
+            height: 148px;
+            padding: 5px 10px;
+            border: solid 1px rgba(213, 213, 213, 0.5);
+            background-color: #ffffff;
+        }
+        &__price-range {
+            padding: 5px 10px;
+            margin: 15px 0px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__price-text {
+            font-size: 10px;
+        }
+        &__right {
+            width: 80%;
+            margin-left: 5px;
+        }
+        &__row-resultado {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__resultado-text {
+            padding: 5px 10px;
+            margin: 15px 0px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        &__precio-btn {
+            width: 260px;
+            height: 50px;
+            padding: 5px 25px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: solid 2px rgba(213, 213, 213, 0.5);
+            background-color: #ffffff;
+            transition: all .3s ease-in 0s;
+        }
+        &__paginacion {
+            width: 100%;
+            margin: 50px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        &__row-paginacion {
+            width: 700px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            span {
+                font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+        }
+        &__number {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            line-height: 2;
+            // opacity: 0.22;
+            color: #000;
+            background-color: #acacac;
+        }
+        &__suscripcion {
+            margin: 50px 0px;
+            padding: 10px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+          }
+          &__row-suscripcion {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          }
+          &__suscripcion-left {
+            width: 100%;
+            height: 500px;
+            padding: 30px;
+            margin-left: auto;
+            text-align: right;
+      
+          }
+          &__suscripcion-title {
+            margin: 50px auto;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #323232;
+            font-size: 24px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+          }
+          &__suscripcion-text {
+            width: 472px;
+            height: 47px;
+            margin: 25px 40px 25px 0;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #323232;
+          }
+          &__row-form{
+            display: flex;
+            justify-content: end;
+            button {
+              width: 122.5px;
+              height: 50px;
+              padding: 17px 36.1px 17px 40.4px;
+              font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            }
+          }
+          &__input {
+            width: 459px !important;
+            height: 50px !important;
+            padding: 10px;
+            border: solid 1.2px rgba(213, 213, 213, 0.6);
+            background-color: #ffffff;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+          }
+          &__suscripcion-right {
+            width: 100%;
+            height: 500px;
+            background-color: #fff;
+            text-align: left;
+            padding: 30px;
+          }
+          &__row-hash {
+            display: flex;
+            button {
+              width: 130px;
+              height: 50px;
+              font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+              margin: 5px 5px;
+            }
+          }
+
+
+    }
+
+    
+}
