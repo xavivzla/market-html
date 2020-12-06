@@ -1,0 +1,27 @@
+#{$namespace} {
+  &-breacrumbs {
+    a {
+      font-family: MollenPersonalUse;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+      text-transform: uppercase;
+      &:after {
+        content: '/';
+        margin: 0 5px;
+        margin-left: 8px;
+      }
+      &:last-child {
+        color: var(--color-primary-bold);
+        &:after {
+          content: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{% extends '../layouts/base.twig' %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+    </style>
+{% endblock %}
+
+{% block title %}Product{% endblock %}
+
+{% block content %}
+    <div class="boxapi-product">
+        <div class="container">
+            <div class="boxapi-breacrumbs">
+                <a href="">Home</a>
+                <a href="">Zara</a>
+            </div>
+            <div class="boxapi-product__top">
+                <div class="boxapi-product__gallery">
+                    <div class="boxapi-slider-wrapper">
+                        <ul class="boxapi-slider-preview">
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?nature" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?sky" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?sea" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?forest" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?stars" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?horizon" alt=""></li>
+                        </ul>
+
+                        <ul class="boxapi-slider-thumb">
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?nature" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?sky" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?sea" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?forest" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?stars" alt=""></li>
+                            <li class="type-image"><img src="https://source.unsplash.com/800x600/?horizon" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxapi-product__info">
+                    <div class="boxapi-product__info__two">
+                        <div class="boxapi-product__info__brand">ZARA</div>
+                        <div class="boxapi-product__info__sku">SKU: 2065254657491P</div>
+                    </div>
+                    <div class="boxapi-product__info__two">
+                        <div class="boxapi-product__info__name">TOM TAILOR DENIM</div>
+                        <div class="boxapi-product__info__others">
+                            <div class="boxapi-product__info__whislist">
+                                <span class="icon-heart"></span>
+                            </div>
+                            <div class="boxapi-product__info__share">
+                                <span class="icon-share"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxapi-product__info__raiting">
+                        <div class="boxapi-product__info__starts">
+                            <span class="icon-star active"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                        </div>
+                        <span>21 reseñas</span>
+                    </div>
+
+                    <div class="boxapi-product__info__desc">
+                        Sorpréndete con las características del nuevo Huawei Y7P. Triple cámara de 48MP. Amplia pantalla de 6.39 pulgadas.
+                    </div>
+                    <div class="boxapi-product__gallery__mobile">
+                        <div class="boxapi-slider-wrapper">
+                            <ul class="boxapi-slider-preview">
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?nature" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?sky" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?sea" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?forest" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?stars" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?horizon" alt=""></li>
+                            </ul>
+
+                            <ul class="boxapi-slider-thumb">
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?nature" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?sky" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?sea" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?forest" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?stars" alt=""></li>
+                                <li class="type-image"><img src="https://source.unsplash.com/800x600/?horizon" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxapi-product__info__pricing">
+                        <p>Precio</p>
+                        <div class="boxapi-product__info__price">
+                            S/ 29.99
+                        </div>
+                        <div class="boxapi-product__info__price-old">S/ 39.99</div>
+                        <div class="boxapi-product__info__price-dscto">-20% DSCTO</div>
+                    </div>
+
+                    <div class="boxapi-product-variation">
+                        <div class="boxapi-product-variation__title">Tallas</div>
+                        <div class="boxapi-product-variation__list tallas">
+                            <div class="boxapi-product-variation__item active">S</div>
+                            <div class="boxapi-product-variation__item">M</div>
+                            <div class="boxapi-product-variation__item">L</div>
+                        </div>
+                    </div>
+
+                    <div class="boxapi-product__actions">
+                        <div class="boxapi-product__quantity">
+                            <span class="icon-minus menos"></span>
+                            <input type="number" value="1">
+                            <span class="icon-plus more"></span>
+                        </div>
+                        <div class="boxapi-btn boxapi-btn-primary">Agregar al carrito</div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxapi-product__bottom">
+                <div class="boxapi-product__collapses">
+                    <div class="boxapi-product__collapse active">
+                        <div class="boxapi-product__collapse__header">
+                            <i></i> <span>Descripción del producto</span>
+                        </div>
+                        <div class="boxapi-product__collapse__body">
+                            Fundada en 1973 por Marina Bustamante, Renzo Costa ha logrado posicionarse como una de las firmas más importantes de diseño de prendas y artículos de cuero.
+                            La “Pasión por los cueros” de Renzo Costa lo ha llevado a dominar el arte de la marroquinería, ofreciendo artículos de primera calidad y contando entre sus proveedores a las mejores curtiembres nacionales e internacionales. Es este amor por los detalles y el diseño que mantiene a Renzo Costa a la vanguardia de la industria.
+                            La billetera es el accesorio que te acompaña en todo lugar, por lo que debe destacarse por su original diseño y calidad. En Renzo Costa tenemos la mayor variedad de billeteras en diferentes modelos y colores que complementaran tu cartera o mochila para obtener un look ideal.
+
+                            Tu billetera de cuero Renzo Costa revela que eres una mujer que ama la moda y la calidad en cada detalle. Su diseño y buena distribucion interior hacen que se adapte a tus necesidades. El estilo y elegancia de esta billetera te acompañaran cada dia.
+                        </div>
+                    </div>
+
+                    <div class="boxapi-product__collapse">
+                        <div class="boxapi-product__collapse__header">
+                            <i></i> <span>Especificaciones</span>
+                        </div>
+                        <div class="boxapi-product__collapse__body">
+                            <div class="boxapi-table">
+                                <div class="boxapi-table__item">
+                                    <p>Marca</p>
+                                    <p>La Martina</p>
+                                </div>
+                                
+                                <div class="boxapi-table__item">
+                                    <p>Marca</p>
+                                    <p>La Martina</p>
+                                </div>
+
+                                <div class="boxapi-table__item">
+                                    <p>Marca</p>
+                                    <p>La Martina</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boxapi-product__collapse">
+                        <div class="boxapi-product__collapse__header">
+                            <i></i> <span>Valoraciones</span>
+                        </div>
+                        <div class="boxapi-product__collapse__body">
+                            <div class="boxapi-table">
+                                <div class="boxapi-table__item">
+                                    <p>Marca</p>
+                                    <p>La Martina</p>
+                                </div>
+                                
+                                <div class="boxapi-table__item">
+                                    <p>Marca</p>
+                                    <p>La Martina</p>
+                                </div>
+
+                                <div class="boxapi-table__item">
+                                    <p>Marca</p>
+                                    <p>La Martina</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boxapi-product__collapse">
+                        <div class="boxapi-product__collapse__header two">
+                            <span>
+                                <i></i> <span>Valoraciones <small>(21 reseñas)</small></span>
+                            </span>
+                            <span class="star">
+                                4
+                                <span class="icon-star active"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                                <span class="icon-star"></span>
+                            </span>
+                        </div>
+                        <div class="boxapi-product__collapse__body">
+                            <div class="boxapi-product__comment__status">fvcdcfvgf</div>
+                            <div class="boxapi-product__comment">
+                                <div class="boxapi-product__comment__top">
+                                    <span>Marcela</span>
+                                    <span>09 Oct 2020</span>
+                                </div>
+                                <div class="boxapi-product__comment__star">
+                                    <span class="icon-star active"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                </div>
+                                <div class="boxapi-product__comment__paragraph">
+                                    ¡Hola! Me encantó el producto.
+                                </div>
+                            </div>
+
+                            <div class="boxapi-product__comment">
+                                <div class="boxapi-product__comment__top">
+                                    <span>Marcela</span>
+                                    <span>09 Oct 2020</span>
+                                </div>
+                                <div class="boxapi-product__comment__star">
+                                    <span class="icon-star active"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                    <span class="icon-star"></span>
+                                </div>
+                                <div class="boxapi-product__comment__paragraph">
+                                    ¡Hola! Me encantó el producto.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boxapi-product__store">
+                    <div class="boxapi-product__store__top">
+                        <div>
+                            <div class="boxapi-product__store__image">
+                                <img src="https://img.bekiamoda.com/marcas/th/0000/1.jpg" alt="">
+                            </div>
+                            <div class="boxapi-product__store__name">
+                                Fernando's Store
+                            </div>
+                        </div>
+
+                        <div class="boxapi-product__store__link">
+                            <span class="icon-shop"></span> Ver tienda
+                        </div>
+                    </div>
+                    <div class="boxapi-product__store__bottom">
+                        <div>
+                            <i class="icon-credit-card"></i>
+                            <span>Seguridad al realizar pagos</span>
+                        </div>
+                        <div>
+                            <i class="icon-question"></i>
+                            <span>Resolvemos tus dudas al instante. Contáctanos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function(){
+            $('.boxapi-slider-thumb').slick({
+                autoplay: false,
+                vertical: true,
+                infinite: true,
+                verticalSwiping: true,
+                slidesPerRow: 5,
+                slidesToShow: 5,
+                asNavFor: '.boxapi-slider-preview',
+                focusOnSelect: true,
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                //prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-up"></i></button>',
+                //nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-down"></i></button>',
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            vertical: false,
+                        }
+                    },
+                    {
+                        breakpoint: 479,
+                        settings: {
+                            vertical: false,
+                            slidesPerRow: 3,
+                            slidesToShow: 3,
+                        }
+                    },
+                ]
+            });
+            $('.boxapi-slider-preview').slick({
+                autoplay: false,
+                vertical: true,
+                infinite: true,
+                slidesPerRow: 1,
+                slidesToShow: 1,
+                asNavFor: '.boxapi-slider-thumb',
+                arrows: false,
+                draggable: false,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            vertical: false,
+                            fade: true,
+                        }
+                    },
+                ]
+            });
+
+            $('.boxapi-product__collapse__header').click(function() {
+                $(this).parent().toggleClass('active')
+            })
+        });
+    </script>
+{% endblock %}

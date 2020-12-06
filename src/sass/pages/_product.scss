@@ -1,0 +1,488 @@
+#{$namespace} {
+  &-table {
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: left;
+      padding: 18px 20px;
+      &:nth-child(odd) {
+        background-color: rgba(197, 197, 197, 0.11);
+      }
+    }
+  }
+  &-product {
+    .boxapi-breacrumbs {
+      margin-top: 24px;
+      margin-bottom: 30px;
+    }
+    &__top {
+      @include desde(1024px) {
+        display: flex;
+      }
+    }
+    &__gallery {
+      display: none;
+      @include desde(1024px) {
+        display: flex;
+        flex: 1;
+        width: 60%;
+
+        .slick-track .slick-track { display: none; }
+        #{$namespace}-slider {
+          &-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            overflow: hidden;
+            max-height: 300px;
+            // max-height: 600px;
+            ul {
+              margin: 0 !important;
+            }
+          }
+          &-thumb {
+            max-width: 100px;
+            li {
+              max-height: 100px;
+            }
+          }
+        }
+      }
+      @include desde(1100px) {
+        #{$namespace}-slider {
+          &-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            overflow: hidden;
+            max-height: 550px;
+            // max-height: 600px;
+            ul {
+              margin: 0 !important;
+            }
+          }
+          &-thumb {
+            max-width: 100px;
+            li {
+              max-height: 100px;
+            }
+          }
+        }
+      }
+    }
+    &__gallery__mobile {
+      #{$namespace}-slider {
+        &-thumb {
+          .slick-prev,
+          .slick-next {
+            z-index: 1;
+            height: 1em;
+            width: 100%;
+            background-color: #000;
+            opacity: 0.3;
+            transition: opacity 300ms ease;
+            font-size: 1.5em;
+            color: #fff;
+            &:hover,
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+      @include desde(s) {
+        .slick-track .slick-track { display: none; }
+        #{$namespace}-slider {
+          &-wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            overflow: hidden;
+            max-height: 600px;
+          }
+          &-thumb {
+            max-width: 125px;
+            li {
+              max-height: 100px;
+            }
+          }
+        }
+
+      }
+      @include desde(1024px) {
+        display: none;
+      }
+    }
+    &__info {
+      @include desde(1024px) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        width: 100%;
+        max-width: 560px;
+      }
+      @include desde(1200px) {
+        padding-left: 100px;
+      }
+      &__two {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      &__desc {
+        display: none;
+        @include desde(1024px) {
+          display: block;
+          font-family: MollenPersonalUse;
+          font-size: 15px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.33;
+          letter-spacing: normal;
+          text-align: left;
+          color: #323232;
+        }
+      }
+      &__raiting {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      &__whislist {
+        font-size: 24px;
+        color: #d5d5d5;
+      }
+      &__share {
+        font-size: 24px;
+        margin-left: 10px;
+      }
+      &__sku,
+      &__brand {
+        display: none;
+        @include desde(1024px) {
+          display: block;
+        }
+      }
+      &__brand {
+        font-family: MollenPersonalUse;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--color-primary);
+      }
+      &__sku {
+        margin-bottom: 10px;
+        font-family: MollenPersonalUse;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(50, 50, 50, 0.75);
+      }
+      &__starts {
+        margin-right: 20px;
+        span {
+          font-size: 24px;
+          color: #d5d5d5;
+          &.active {
+            color: #fbbc58;
+          }
+        }
+      }
+      &__name {
+        font-family: MollenPersonalUse;
+        font-size: 24px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        text-align: left;
+        color: #323232;
+        flex: 1;
+      }
+      &__others {
+        display: flex;
+      }
+      &__pricing {
+        font-family: MollenPersonalUse;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(50, 50, 50, 0.85);
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+      &__price {
+        font-family: MollenPersonalUse;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--color-primary-bold);
+        display: inline-block;
+        &-old {
+          display: inline-block;
+          font-family: MollenPersonalUse;
+          font-size: 14px;
+          text-decoration: line-through;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: rgba(114, 114, 114, 0.75);
+          margin-left: 4px;
+        }
+        &-dscto {
+          display: inline-block;
+          color: $white;
+          padding: 7px 7px 5px 8px;
+          margin-left: 25px;
+          background-color: var(--color-primary-bold);
+        }
+      }
+    }
+    &__actions {
+      display: flex;
+      align-items: center;
+    }
+    &__quantity {
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03);
+      border: solid 1px #d5d5d5;
+      background-color: #ffffff;
+      padding: 0 15px;
+      height: 36px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      .menos, .more {
+        font-size: 10px;
+        cursor: pointer;
+      }
+      input {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        border: none;
+      }
+    }
+    &__collapses {
+      margin-top: 40px;
+      @include desde(1024px) {
+        margin-top: 0;
+      }
+    }
+    &__collapse {
+      padding: 26px;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      &__header {
+        font-family: MollenPersonalUse;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: #323232;
+        cursor: pointer;
+        i {
+          font-style: initial;
+          &:before {
+            content: '\e908';
+            font-family: 'icomoon' !important;
+            font-size: 14px;
+            color: var(--color-primary-bold);
+            margin-right: 14px;
+          }
+        }
+        &.two {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .star {
+            display: flex;
+            align-items: center;
+            span {
+              color: #d5d5d5;
+              &:first-child {
+                margin-left: 5px;
+              }
+              &.active {
+                color: #fbbc58;
+              }
+            }
+          }
+        }
+      }
+      &__body {
+        display: none;
+        padding-top: 20px;
+
+        font-family: MollenPersonalUse;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #323232;
+
+      }
+      &.active {
+        #{$namespace}-product__collapse__header {
+          i {
+            &:before {
+              content: '\e905';
+            }
+          }
+        }
+        #{$namespace}-product__collapse__body {
+          display: block;
+        }
+      }
+    }
+    &__comment {
+      border-bottom: solid 1px rgba(213, 213, 213, 0.5);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      &:last-child {
+        border: none;
+      }
+      &__top {
+        display: flex;
+        justify-content: space-between;
+        opacity: 0.7;
+        font-family: MollenPersonalUse;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #323232;
+      }
+      &__star {
+        margin-bottom: 20px;
+        span {
+          color: #d5d5d5;
+          &.active {
+            color: #fbbc58;
+          }
+        }
+      }
+      &__status {
+        display: none;
+      }
+    }
+    &__store {
+      background: $white;
+      padding: 26px;
+      margin-bottom: 20px;
+      @include desde(1024px) {
+        align-self: flex-start;
+      }
+      &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 1px rgba(213, 213, 213, 0.5);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        & > div {
+          display: flex;
+          align-items: center;
+        }
+      }
+      &__bottom {
+        div {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+          font-family: MollenPersonalUse;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #323232;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          i {
+            color: var(--color-primary);
+            font-size: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+      &__image {
+        width: 35px;
+        height: 35px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-right: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      &__name {
+        font-family: MollenPersonalUse;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: #323232;
+      }
+      &__link {
+        color: var(--color-primary);
+        display: flex;
+        align-items: center;
+        font-family: MollenPersonalUse;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        span {
+          margin-right: 5px;
+          font-size: 20px;
+        }
+      }
+    }
+    &__bottom {
+      @include desde(1024px) {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 80px;
+      }
+    }
+  }
+}
