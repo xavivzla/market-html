@@ -49,7 +49,11 @@
         &__left {
             width: 20%;
             margin-right: 5px;
+            @media screen and(max-width: 768px){
+                display: none;
+            }
         }
+        
         &__dropdown {
             padding: 5px;
             margin: 10px 0px;
@@ -122,16 +126,48 @@
         &__right {
             width: 80%;
             margin-left: 5px;
+            @media screen and(max-width: 768px){
+                width: 100%;
+              }
         }
         &__row-resultado {
+            width: 100%;
             display: flex;
             justify-content: space-between;
+            @media screen and(max-width: 768px){
+                flex-wrap: wrap;
+            }
         }
         &__resultado-text {
             padding: 5px 10px;
             margin: 15px 0px;
             font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-weight: bold
+        }
+        &__row-filtrado{
+            display: flex;
+            @media screen and(max-width: 768px){
+                margin: 0px auto;
+              }
+        }
+        &__filtrar-btn{
+            width: 100px;
+            height: 50px;
+            justify-content: space-between;
+            vertical-align: middle;
+            align-items: center;
+            padding: 10px 15px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
             font-weight: bold;
+            border: solid 1px #d5d5d5;
+            background-color: #ffffff;
+            display: none;
+            @media screen and(max-width: 768px){
+                display: block;
+              }
+        }
+        &__filtar{
+            color: $primary;
         }
         &__precio-btn {
             width: 260px;
@@ -156,10 +192,46 @@
             align-items: center;
             justify-content: space-around;
             text-align: center;
+            @media screen and(max-width: 768px){
+                justify-content: stretch;
+                margin: 0px auto;
+                width: 100%;
+                padding-left: 30%;
+               
+              }
             span {
                 font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
                 font-weight: bold;
+                @media screen and(max-width: 768px){
+                    margin: 0px 15px;
+                  }
             }
+        }
+        &__sort-btn{
+            width: 260px;
+            height: 50px;
+            padding: 5px 25px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: solid 2px rgba(213, 213, 213, 0.5);
+            background-color: #ffffff;
+            transition: all .3s ease-in 0s;
+            @media screen and(max-width: 768px){
+                display: none;
+              }
+        }
+        &__show-btn{
+            width: 260px;
+            height: 50px;
+            padding: 5px 25px;
+            font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: solid 2px rgba(213, 213, 213, 0.5);
+            background-color: #ffffff;
+            transition: all .3s ease-in 0s;
+            @media screen and(max-width: 768px){
+                display: none;
+              }
         }
         &__number {
             width: 30px;
@@ -169,17 +241,31 @@
             // opacity: 0.22;
             color: #000;
             background-color: #acacac;
+            @media screen and(max-width: 768px){
+                width: 40px;
+                height: 40px;
+                padding-top: 5px;
+                border-radius: 5px;
+              }
         }
         &__suscripcion {
             margin: 50px 0px;
             padding: 10px;
             margin-bottom: 0px;
             padding-bottom: 0px;
+            @media screen and(max-width: 768px){
+              text-align: center;
+              margin: 30px auto;
+            }
           }
           &__row-suscripcion {
             display: flex;
             align-items: center;
             justify-content: space-around;
+            @media screen and(max-width: 768px){
+              flex-wrap: wrap;
+            }
+            
           }
           &__suscripcion-left {
             width: 100%;
@@ -187,6 +273,10 @@
             padding: 30px;
             margin-left: auto;
             text-align: right;
+            @media screen and(max-width: 768px){
+              text-align: center;
+              height: auto;
+            }
       
           }
           &__suscripcion-title {
@@ -200,6 +290,9 @@
             font-style: normal;
             line-height: 1.5;
             letter-spacing: normal;
+            @media screen and(max-width: 768px){
+              text-align: center;
+            }
           }
           &__suscripcion-text {
             width: 472px;
@@ -214,6 +307,13 @@
             letter-spacing: normal;
             text-align: left;
             color: #323232;
+            @media screen and(max-width: 768px){
+              text-align: center;
+              padding: 10px 15px;
+              margin: 0;
+              width: auto;
+              height: auto;
+            }
           }
           &__row-form{
             display: flex;
@@ -239,6 +339,9 @@
             background-color: #fff;
             text-align: left;
             padding: 30px;
+            @media screen and(max-width: 768px){
+              height: auto;
+            }
           }
           &__row-hash {
             display: flex;

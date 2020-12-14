@@ -135,9 +135,16 @@
                         <div class="boxapi-detail-brand__resultado-text">
                             200 resultados
                         </div>
-                        <button class="boxapi-detail-brand__precio-btn">Desde mayor precio
-                            <span class="boxapi-detail-brand__arrow-down"><img src="/assets/img/next.svg" alt=""></span>
-                        </button>
+                        <div class="boxapi-detail-brand__row-filtrado">
+                            <button class="boxapi-detail-brand__filtrar-btn">
+                                <span class="boxapi-detail-brand__icon-filtro">1</span>
+                                <span class="boxapi-detail-brand__filtar">Filtar</span>
+                            </button>
+                            <button class="boxapi-detail-brand__precio-btn">Desde mayor precio
+                                <span class="boxapi-detail-brand__arrow-down"><img src="/assets/img/next.svg" alt=""></span>
+                            </button>
+                        </div>
+                        
                     </div>
                     <div class="boxapi-detail-brand__row-resultado">
                         {% include '../components/card-item.twig' %}
@@ -166,7 +173,7 @@
              <!--=========================== INICIO PAGINACION ===========================-->
             <div class="boxapi-detail-brand__paginacion">
                 <div class="boxapi-detail-brand__row-paginacion">
-                    <button class="boxapi-detail-brand__precio-btn">Sort by date
+                    <button class="boxapi-detail-brand__sort-btn">Sort by date
                         <span class="boxapi-detail-brand__arrow-down"><img src="/assets/img/next.svg" alt=""></span>
                     </button>
 
@@ -174,7 +181,7 @@
                     <span>2</span>
                     <span>3</span>
 
-                    <button class="boxapi-detail-brand__precio-btn">Show 
+                    <button class="boxapi-detail-brand__show-btn">Show 
                         <span>12</span>
                         <span class="boxapi-detail-brand__arrow-down"><img src="/assets/img/next.svg" alt=""></span>
                     </button>
