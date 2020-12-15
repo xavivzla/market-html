@@ -4,6 +4,10 @@
     border-radius: 12px;
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.12);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
     &__top {
       position: relative;
       img {
