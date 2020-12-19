@@ -12,6 +12,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         width: 100%;
+        grid-column-gap: 40px;
       }
       &__top {
         display: flex;
@@ -40,8 +41,34 @@
     &__content {
       display: flex;
     }
-    &__filters {
-      display: none;
+    .page-numbers {
+      display: flex;
+      justify-content: center;
+      span, a {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        background-color: rgba(var(--color-primary-bold-rgb), .15);
+        &.current {
+          background-color: var(--color-primary-bold);
+          color: #fff;
+        }
+        &.next.page-numbers {
+          background-color: transparent;
+        }
+      }
+      a {
+        color: var(--color-primary);
+      }
+      li {
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
