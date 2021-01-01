@@ -98,6 +98,7 @@
     }
     &__search {
       display: none;
+
       @include desde(m) {
         display: flex;
         border-radius: 25px;
@@ -117,6 +118,9 @@
           border: none;
           padding-left: 10px;
         }
+      }
+      button {
+        display: none;
       }
     }
   }

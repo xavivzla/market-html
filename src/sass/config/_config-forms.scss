@@ -231,7 +231,7 @@ $focus-box-shadow: none !default;
 @mixin baseSelect() {
   position: relative;
   &::before{
-    content: "\e900";
+    content: "\e906";
     font-family: 'icomoon' !important;
     position: absolute;
     font-weight: bold;
@@ -295,6 +295,18 @@ $focus-box-shadow: none !default;
 }
 
 #{$namespace}-form {
+  .form-row {
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    &#ci-register-select_field{
+      .woocommerce-input-wrapper {
+        @include select();
+      }
+    }
+  }
   &__row {
     display: flex;
     flex-wrap: wrap;
@@ -304,7 +316,7 @@ $focus-box-shadow: none !default;
     @include desde(640px){
       flex-direction: row;
     }
-    &__col {
+    &__col, .form-row {
       padding-right: 10px;
       padding-left: 10px;
       flex-basis: 0;
@@ -367,7 +379,7 @@ $focus-box-shadow: none !default;
     height: 95px;
     resize: none;
   }
-  &__group {
+  &__group, .form-row {
     @include positionGrop();
     @include normal-style();
     &__select{

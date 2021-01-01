@@ -1,0 +1,59 @@
+#{$namespace} {
+  &-register {
+    &__wrapper {
+      display: flex;
+    }
+    &__left {
+      margin-right: 150px;
+    }
+    &__title {
+      font-family: 'MollenPersonalUse', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.42;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+      margin-bottom: 25px;
+    }
+    &__desc {
+      font-family: 'MollenPersonalUse', sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+      margin-bottom: 50px;
+    }
+    &__item {
+      padding: 14px 25px;
+      border-radius: 8px;
+      background-color: rgba($color: #727272, $alpha: 0.1);
+      display: flex;
+      align-items: center;
+      font-family: 'MollenPersonalUse', sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+      margin-bottom: 35px;
+      span {
+        margin-right: 25px;
+      }
+      &:last-child {
+        background-color: rgba($color: #e84976, $alpha: 0.3);
+        color: var(--color-primary);
+        margin-bottom: 0;
+      }
+    }
+  }
+}

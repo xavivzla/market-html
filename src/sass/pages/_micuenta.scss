@@ -1,0 +1,71 @@
+#{$namespace} {
+  &-micuenta {
+    padding: 70px 0;
+    &__title {
+      font-family: MollenPersonalUse;
+      font-size: 30px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.39;
+      letter-spacing: normal;
+      text-align: left;
+      color: #323232;
+    }
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    &__content {
+      display: flex;
+    }
+    &__menu {
+      max-width: 300px;
+      width: 100%;
+      ul {
+        border: solid 1px #d5d5d5;
+      }
+      li {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &::before {
+          content: '';
+        }
+        &.is-active {
+          background-color: rgba($color: #e84976, $alpha: 0.15);
+          a {
+            color: var(--color-primary-bold);
+          }
+          &:before {
+            width: 5px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #d1105a;
+          }
+        }
+        a {
+          padding: 0 25px;
+          text-decoration: none;
+          font-family: MollenPersonalUse;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.44;
+          letter-spacing: normal;
+          text-align: left;
+          color: #323232;
+        }
+      }
+    }
+    &__right {
+      flex: 1;
+      margin-left: 100px;
+    }
+  }
+}

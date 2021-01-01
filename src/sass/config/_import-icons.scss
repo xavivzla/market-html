@@ -1,10 +1,15 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon/icomoon.eot?5gq4r1');
-    src:  url('../fonts/icomoon/icomoon.eot?5gq4r1#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon/icomoon.ttf?5gq4r1') format('truetype'),
-      url('../fonts/icomoon/icomoon.woff?5gq4r1') format('woff'),
-      url('../fonts/icomoon/icomoon.svg?5gq4r1#icomoon') format('svg');
+    src:  url('fonts/icomoon/icomoon.eot?5gq4r1');
+    src:  url('fonts/icomoon/icomoon.eot?5gq4r1#iefix') format('embedded-opentype'),
+      url('fonts/icomoon/icomoon.ttf?5gq4r1') format('truetype'),
+      url('fonts/icomoon/icomoon.woff?5gq4r1') format('woff'),
+      url('fonts/icomoon/icomoon.svg?5gq4r1#icomoon') format('svg');
+    // src:  url('../fonts/icomoon/icomoon.eot?5gq4r1');
+    // src:  url('../fonts/icomoon/icomoon.eot?5gq4r1#iefix') format('embedded-opentype'),
+    //   url('../fonts/icomoon/icomoon.ttf?5gq4r1') format('truetype'),
+    //   url('../fonts/icomoon/icomoon.woff?5gq4r1') format('woff'),
+    //   url('../fonts/icomoon/icomoon.svg?5gq4r1#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -25,67 +30,114 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-credit-card:before {
+  .icon-user:before {
     content: "\e900";
   }
-  .icon-circled-check .path1:before {
+  .icon-close:before {
     content: "\e901";
+  }
+  .icon-facebook-ncolor:before {
+    content: "\e903";
+  }
+  .icon-instagram:before {
+    content: "\e904";
+  }
+  .icon-arrow-right:before {
+    content: "\e905";
+  }
+  .icon-arrow-down:before {
+    content: "\e906";
+  }
+  .icon-arrow-left:before {
+    content: "\e907";
+  }
+  .icon-arrow-top:before {
+    content: "\e908";
+  }
+  .icon-google-color .path1:before {
+    content: "\e90a";
+    color: rgb(22, 126, 230);
+  }
+  .icon-google-color .path2:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: rgb(18, 179, 71);
+  }
+  .icon-google-color .path3:before {
+    content: "\e90c";
+    margin-left: -1em;
+    color: rgb(15, 153, 62);
+  }
+  .icon-google-color .path4:before {
+    content: "\e90d";
+    margin-left: -1em;
+    color: rgb(255, 213, 0);
+  }
+  .icon-google-color .path5:before {
+    content: "\e90e";
+    margin-left: -1em;
+    color: rgb(255, 75, 38);
+  }
+  .icon-google-color .path6:before {
+    content: "\e90f";
+    margin-left: -1em;
+    color: rgb(217, 63, 33);
+  }
+  .icon-security:before {
+    content: "\e910";
+  }
+  .icon-check-circled .path1:before {
+    content: "\e911";
     color: rgb(50, 50, 50);
   }
-  .icon-circled-check .path2:before {
-    content: "\e902";
+  .icon-check-circled .path2:before {
+    content: "\e912";
     margin-left: -1em;
     color: rgb(255, 255, 255);
   }
-  .icon-heart:before {
-    content: "\e903";
+  .icon-heart-filled:before {
+    content: "\e913";
   }
   .icon-question:before {
-    content: "\e904";
+    content: "\e914";
   }
   .icon-minus:before {
-    content: "\e905";
+    content: "\e915";
   }
   .icon-mouse:before {
-    content: "\e906";
+    content: "\e916";
   }
   .icon-shop:before {
-    content: "\e907";
+    content: "\e917";
   }
   .icon-plus:before {
-    content: "\e908";
+    content: "\e918";
   }
   .icon-search:before {
-    content: "\e909";
+    content: "\e919";
   }
   .icon-cart:before {
-    content: "\e90a";
+    content: "\e91a";
   }
   .icon-share:before {
-    content: "\e90b";
+    content: "\e91b";
   }
   .icon-star:before {
-    content: "\e90c";
+    content: "\e91c";
   }
   .icon-trash:before {
-    content: "\e90d";
-  }
-  .icon-user:before {
-    content: "\e90e";
-  }
-  .icon-arrow-down:before {
-    content: "\e90f";
+    content: "\e91d";
   }
   .icon-check:before {
-    content: "\e910";
+    content: "\e91e";
   }
   .icon-menu:before {
-    content: "\e911";
+    content: "\e91f";
   }
-  .icon-arrow2-right:before {
-    content: "\e912";
+  .icon-arrow-nright:before {
+    content: "\e920";
   }
   .icon-filter:before {
-    content: "\e913";
+    content: "\e921";
   }
   
