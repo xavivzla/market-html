@@ -45,7 +45,7 @@
         border-radius: 50%;
         background: $black;
         color: $white;
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 9px;
         font-weight: bold;
         top: -13px;
@@ -65,7 +65,7 @@
         @include desde(m) {
           display: block;
           margin-left: 15px;
-          font-family: MollenPersonalUse;
+          font-family: 'Mollen Personal Use', sans-serif;
           font-size: 15px;
           font-weight: bold;
           font-stretch: normal;
@@ -88,7 +88,7 @@
         border-radius: 50%;
         background: $black;
         color: $white;
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 9px;
         font-weight: bold;
         top: -13px;

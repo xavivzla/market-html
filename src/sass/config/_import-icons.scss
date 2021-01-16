@@ -30,6 +30,90 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-alert:before {
+    content: "\e902";
+  }
+  .icon-arrow-down1:before {
+    content: "\e909";
+  }
+  .icon-cart1:before {
+    content: "\e922";
+  }
+  .icon-facebook-color:before {
+    content: "\e923";
+    color: #1976d2;
+  }
+  .icon-filter1:before {
+    content: "\e924";
+  }
+  .icon-google-color1 .path1:before {
+    content: "\e925";
+    color: rgb(22, 126, 230);
+  }
+  .icon-google-color1 .path2:before {
+    content: "\e926";
+    margin-left: -1em;
+    color: rgb(18, 179, 71);
+  }
+  .icon-google-color1 .path3:before {
+    content: "\e927";
+    margin-left: -1em;
+    color: rgb(15, 153, 62);
+  }
+  .icon-google-color1 .path4:before {
+    content: "\e928";
+    margin-left: -1em;
+    color: rgb(255, 213, 0);
+  }
+  .icon-google-color1 .path5:before {
+    content: "\e929";
+    margin-left: -1em;
+    color: rgb(255, 75, 38);
+  }
+  .icon-google-color1 .path6:before {
+    content: "\e92a";
+    margin-left: -1em;
+    color: rgb(217, 63, 33);
+  }
+  .icon-Grupo-678:before {
+    content: "\e92b";
+  }
+  .icon-Grupo-682:before {
+    content: "\e92c";
+  }
+  .icon-heart:before {
+    content: "\e92d";
+  }
+  .icon-mail:before {
+    content: "\e92e";
+  }
+  .icon-menu1:before {
+    content: "\e92f";
+  }
+  .icon-mouse1:before {
+    content: "\e930";
+  }
+  .icon-notification:before {
+    content: "\e931";
+  }
+  .icon-plus1:before {
+    content: "\e932";
+  }
+  .icon-question1:before {
+    content: "\e933";
+  }
+  .icon-secure:before {
+    content: "\e934";
+  }
+  .icon-tlf:before {
+    content: "\e935";
+  }
+  .icon-trash1:before {
+    content: "\e936";
+  }
+  .icon-user1:before {
+    content: "\e937";
+  }
   .icon-user:before {
     content: "\e900";
   }

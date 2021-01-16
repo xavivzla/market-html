@@ -130,7 +130,7 @@
         display: none;
         @include desde(1024px) {
           display: block;
-          font-family: MollenPersonalUse;
+          font-family: 'Mollen Personal Use', sans-serif;
           font-size: 15px;
           font-weight: normal;
           font-stretch: normal;
@@ -163,7 +163,7 @@
         }
       }
       &__brand {
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 14px;
         font-weight: bold;
         font-stretch: normal;
@@ -175,7 +175,7 @@
       }
       &__sku {
         margin-bottom: 10px;
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 12px;
         font-weight: normal;
         font-stretch: normal;
@@ -196,7 +196,7 @@
         }
       }
       &__name {
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -211,7 +211,7 @@
         display: flex;
       }
       &__pricing {
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 14px;
         font-weight: bold;
         font-stretch: normal;
@@ -224,7 +224,7 @@
         margin-bottom: 30px;
       }
       &__price {
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 18px;
         font-weight: normal;
         font-stretch: normal;
@@ -236,7 +236,7 @@
         display: inline-block;
         &-old {
           display: inline-block;
-          font-family: MollenPersonalUse;
+          font-family: 'Mollen Personal Use', sans-serif;
           font-size: 14px;
           text-decoration: line-through;
           font-weight: normal;
@@ -281,6 +281,16 @@
         width: 100%;
         border: none;
       }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
     }
     &__collapses {
       margin-top: 40px;
@@ -293,7 +303,7 @@
       background-color: #ffffff;
       margin-bottom: 20px;
       &__header {
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 16px;
         font-weight: bold;
         font-stretch: normal;
@@ -336,7 +346,7 @@
         display: none;
         padding-top: 20px;
 
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 16px;
         font-weight: normal;
         font-stretch: normal;
@@ -371,7 +381,7 @@
         display: flex;
         justify-content: space-between;
         opacity: 0.7;
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
@@ -418,7 +428,7 @@
           display: flex;
           align-items: center;
           margin-bottom: 15px;
-          font-family: MollenPersonalUse;
+          font-family: 'Mollen Personal Use', sans-serif;
           font-size: 14px;
           font-weight: normal;
           font-stretch: normal;
@@ -450,7 +460,7 @@
         }
       }
       &__name {
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 16px;
         font-weight: bold;
         font-stretch: normal;
@@ -464,7 +474,7 @@
         color: var(--color-primary);
         display: flex;
         align-items: center;
-        font-family: MollenPersonalUse;
+        font-family: 'Mollen Personal Use', sans-serif;
         font-size: 12px;
         font-weight: normal;
         font-stretch: normal;

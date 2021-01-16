@@ -22,14 +22,14 @@
     }
     &__offer {
       position: absolute;
-      font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+      font-family: 'Mollen Personal Use', sans-serif, Arial, Helvetica, sans-serif;
       top: 16px;
       right: 24px;
       background-color: var(--color-primary-bold);
       color: $white;
       padding: 5px 12px;
       border-radius: 12px;
-      font-family: Roboto;
+      // font-family: Roboto;
       font-size: 14px;
       font-weight: 500;
     }
@@ -53,10 +53,10 @@
     &__bottom {
       padding: 20px;
       background: $white;
-      font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+      font-family: 'Mollen Personal Use', sans-serif, Arial, Helvetica, sans-serif;
     }
     &__title {
-      font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+      font-family: 'Mollen Personal Use', sans-serif, Arial, Helvetica, sans-serif;
       font-size: 16px;
       font-weight: bold;
       font-stretch: normal;
@@ -69,7 +69,7 @@
     &__two {
       display: flex;
       justify-content: space-between;
-      font-family: 'MollenPersonalUse', Arial, Helvetica, sans-serif;
+      font-family: 'Mollen Personal Use', Arial, Helvetica, sans-serif;
       font-size: 15px;
       font-weight: normal;
       font-stretch: normal;
